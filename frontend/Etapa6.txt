@@ -1,0 +1,7 @@
+Etapa 6: Interfaz de Usuario (Frontend) (90%)
+Objetivo: Que el usuario final pueda usar el sistema.
+
+Tareas:
+
+Crear frontend/cli.py. Un script que te pida escribir en consola y te devuelva los resultados con formato de Google (Título, URL, Resumen, Puntaje).
+(Opcional) Si el tiempo alcanza, crear frontend/app.py con Flask para que sea una página web real.

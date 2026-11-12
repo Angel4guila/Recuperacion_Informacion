@@ -1,0 +1,8 @@
+ Etapa 7: Documentación y Entrega (100%)
+Objetivo: Entregar un proyecto profesional.
+
+Tareas:
+
+Redactar docs/manual_tecnico.md explicando la arquitectura y la propuesta de búsqueda.
+Limpiar el código (comentarios, quitar prints de prueba).
+Hacer un README.md con los pasos para ejecutar el proyecto desde cero.
