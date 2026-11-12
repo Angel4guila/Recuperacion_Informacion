@@ -1,0 +1,7 @@
+# PLANTILLA: reemplazar https://tu-dominio.example/ por la URL real del sitio.
+# Publicar robots.txt en la raiz del dominio, incluso si el corpus esta en /sitio_web/.
+# La linea Sitemap debe apuntar a la ubicacion publica real de sitemap.xml.
+User-agent: *
+Allow: /
+
+Sitemap: https://tu-dominio.example/sitemap.xml

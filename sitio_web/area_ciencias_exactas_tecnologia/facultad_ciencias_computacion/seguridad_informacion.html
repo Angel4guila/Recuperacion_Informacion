@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguridad de la información en sistemas documentales | Corpus académico sintético</title>
+  <meta name="identificador" content="FCC10">
+  <meta name="area_academica" content="Área de Ciencias Exactas y Tecnología">
+  <meta name="tipo_unidad_academica" content="Facultad">
+  <meta name="unidad_academica" content="Facultad de Ciencias de la Computación">
+  <meta name="topico_principal" content="Autenticación, autorización, integridad y protección de colecciones">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<nav aria-label="Navegación principal">
+<a href="../../index.html">Inicio</a>
+<a href="index.html">Índice de la facultad</a>
+</nav>
+<main>
+<article>
+<header><h1>Seguridad de la información en sistemas documentales</h1><dl class="metadatos"><dt>Identificador</dt><dd>FCC10</dd><dt>Área académica</dt><dd>Área de Ciencias Exactas y Tecnología</dd><dt>Tipo de unidad</dt><dd>Facultad</dd><dt>Unidad académica</dt><dd>Facultad de Ciencias de la Computación</dd><dt>Tópico principal</dt><dd>Autenticación, autorización, integridad y protección de colecciones</dd></dl></header>
+<p>La seguridad de una colección documental busca preservar propiedades de la información y de los servicios que permiten utilizarla. Además de proteger datos restringidos, requiere mantener la integridad de los documentos, controlar cambios y asegurar que los recursos puedan consultarse cuando corresponda. Un conjunto sintético también necesita estas consideraciones si se emplea en experimentos reproducibles: una modificación inadvertida puede alterar resultados y dificultar su interpretación. El análisis comienza identificando recursos, operaciones y responsabilidades, para después establecer controles acordes con el uso previsto de la colección y con sus condiciones de acceso.</p>
+<section>
+<h2>Recursos y escenarios de amenaza</h2>
+<p>Los recursos incluyen archivos, índices, metadatos, cuentas y configuraciones. Cada uno participa de manera diferente en el servicio. Alterar un documento puede cambiar su significado; modificar un índice puede volverlo invisible; sustituir un enlace puede dirigir la consulta hacia otro recurso. Reconocer estas diferencias ayuda a definir qué debe protegerse y cómo verificar su estado.</p>
+<p>Un escenario de amenaza describe una acción o situación capaz de afectar esos recursos. Puede involucrar acceso indebido, errores de operación o fallos de componentes. Conviene relacionar cada escenario con sus consecuencias y con condiciones observables. Así se evitan listas abstractas de riesgos y se priorizan controles que responden a las operaciones reales de consulta, edición, publicación y mantenimiento de la colección.</p>
+</section>
+<section>
+<h2>Identidad y permisos de operación</h2>
+<p>La autenticación permite comprobar una identidad declarada. La autorización determina qué acciones puede realizar esa identidad sobre recursos concretos. Son funciones diferentes: reconocer a una persona no implica permitirle modificar todos los documentos. Separarlas facilita asignar responsabilidades y revisar permisos cuando cambian las tareas dentro del equipo que administra la colección.</p>
+<p>Un esquema de permisos puede distinguir lectura, edición y administración. Cada función debe recibir las capacidades necesarias para sus actividades. También se requiere revisar accesos que dejaron de tener justificación. Registrar cambios de permisos y operaciones relevantes ayuda a investigar incidentes, aunque los registros deben protegerse y revisarse con criterios claros para que no se conviertan en información acumulada sin utilidad operativa.</p>
+</section>
+<section>
+<h2>Integridad y evidencia de cambios</h2>
+<p>La integridad se refiere a conservar información conforme a las modificaciones autorizadas. Comparar versiones permite reconocer qué cambió y relacionarlo con una decisión editorial o técnica. Los resúmenes criptográficos ofrecen una señal para detectar diferencias en archivos, pero necesitan una referencia confiable: comparar contra un valor también alterado no establece el estado original.</p>
+<p>Para un experimento, conviene fijar una versión de la colección y conservar sus archivos junto con los parámetros utilizados. Si se corrige un documento después, la nueva versión debe distinguirse de la anterior. Esta práctica conecta seguridad y reproducibilidad: permite verificar que dos ejecuciones se realizaron sobre el mismo material y evita atribuir al algoritmo diferencias producidas por modificaciones silenciosas del contenido.</p>
+</section>
+<section>
+<h2>Continuidad y recuperación comprobada</h2>
+<p>Las copias de respaldo ayudan a recuperar información perdida, siempre que sean accesibles y estén suficientemente actualizadas para el propósito del sistema. Su existencia no demuestra por sí sola capacidad de restauración. Es necesario comprobar que los archivos pueden recuperarse, que sus relaciones se mantienen y que las herramientas necesarias siguen disponibles en el entorno de destino.</p>
+<p>Un procedimiento de recuperación debe establecer prioridades y verificaciones. Restaurar primero documentos sin recuperar metadatos o enlaces puede dejar una colección incompleta. Después de una interrupción, conviene comprobar navegación, permisos y consistencia de índices antes de reanudar los experimentos. Registrar las acciones realizadas proporciona evidencia para revisar el incidente y mejorar las condiciones de mantenimiento sin perder trazabilidad sobre el estado de los recursos documentales.</p>
+<p>Las revisiones periódicas pueden centrarse en cambios recientes y pruebas de restauración. Este enfoque permite comprobar controles concretos, detectar desviaciones y ajustar responsabilidades según evoluciona la colección, sin depender únicamente de una configuración inicial.</p>
+</section>
+<section class="relacionados" aria-labelledby="temas_relacionados">
+<h2 id="temas_relacionados">Temas relacionados</h2>
+<ul>
+<li><a href="sistemas_distribuidos.html">Sistemas distribuidos para servicios de información</a></li>
+<li><a href="redes_computadoras.html">Redes de computadoras y comunicación de servicios</a></li>
+<li><a href="recuperacion_informacion.html">Fundamentos de recuperación de información</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer><p>Corpus sintético para experimentación académica en Recuperación de Información. No constituye información oficial de la BUAP.</p></footer>
+</body>
+</html>
