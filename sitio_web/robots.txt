@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tu-dominio.example/sitemap.xml
+Sitemap: http://localhost/sito_web/sitemap.xml
