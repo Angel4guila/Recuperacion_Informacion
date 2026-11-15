@@ -332,6 +332,9 @@ class ExtractorHTML(HTMLParser):
     def palabras(self) -> int:
         return len(" ".join(self._texto).split())
 
+    def texto_completo(self) -> str:
+        return " ".join(self._texto)
+
 
 # ===========================================================================
 # PASOS 3, 4, 5 y 6 · el bucle de rastreo
@@ -498,6 +501,7 @@ def rastrear(
             "noindex": noindex,
             "json_ld": len(extractor.json_ld),
             "palabras": extractor.palabras(),
+            "texto": extractor.texto_completo()
         }
 
         # PASO 6: seguir enlaces
