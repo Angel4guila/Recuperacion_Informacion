@@ -33,6 +33,7 @@ un problema para el servidor de otra persona.
 
 from __future__ import annotations
 
+import os
 import argparse
 import json
 import re
@@ -50,7 +51,7 @@ from xml.etree import ElementTree
 # ---------------------------------------------------------------------------
 AGENTE = "DemostradorBot/1.0 (+ejemplo didáctico; contacto: ejemplo@localhost)"
 TIEMPO_MAXIMO = 10          # segundos por petición
-MAX_PAGINAS = 20            # freno de seguridad: nunca rastrear sin límite
+MAX_PAGINAS = 300          # freno de seguridad: nunca rastrear sin límite
 RETARDO = 0.3               # pausa entre peticiones (cortesía con el servidor)
 
 
@@ -344,7 +345,14 @@ def rastrear(
 ) -> dict:
     partes = urllib.parse.urlsplit(inicio)
     host = partes.netloc.lower()
-    robots_url = f"{partes.scheme}://{host}/robots.txt"
+
+    #la ruta base
+    ruta_base = partes.path
+    if not ruta_base.endswith("/"):
+        ruta_base += "/"
+
+    #busca robots.txt en la ruta correcta
+    robots_url = f"{partes.scheme}://{host}{ruta_base}robots.txt"
 
     # ------------------------------------------------------------------
     # PASO 1: robots.txt
@@ -369,7 +377,7 @@ def rastrear(
     # PASO 2: sitemap
     # ------------------------------------------------------------------
     sitemap_urls: list[str] = []
-    candidato = f"{partes.scheme}://{host}/sitemap.xml"
+    candidato = f"{partes.scheme}://{host}{ruta_base}sitemap.xml"
 
     print("\n[2] sitemap.xml")
 
@@ -650,7 +658,7 @@ def main(argv: list[str] | None = None) -> int:
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     analizador.add_argument(
-        "--url", default="http://localhost/sitioweb/corpus/",
+        "--url", default="http://localhost/sitio_web/",
         help="URL de inicio del sitio",
     )
     analizador.add_argument(
@@ -701,9 +709,18 @@ def main(argv: list[str] | None = None) -> int:
 
     imprimir_informe(resultado)
 
-    with open(argumentos.salida, "w", encoding="utf-8") as archivo:
+    # 1. Definimos la ruta exacta hacia la carpeta data/raw
+    # El ".." significa "salir de la carpeta backend y entrar a data/raw"
+    ruta_salida = os.path.join("..", "data", "sin_procesar", "resultados_rastreo.json")
+    
+    # 2. Nos aseguramos de que la carpeta data/raw exista (si no, la crea)
+    os.makedirs(os.path.dirname(ruta_salida), exist_ok=True)
+
+    # 3. Guardamos el archivo en esa ruta
+    with open(ruta_salida, "w", encoding="utf-8") as archivo:
         json.dump(resultado, archivo, ensure_ascii=False, indent=2)
-    print(f"Resultado guardado en: {argumentos.salida}\n")
+        
+    print(f"Resultado guardado en: {ruta_salida}\n")
 
     return 0
 
