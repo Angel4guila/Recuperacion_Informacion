@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redes de computadoras y comunicación de servicios | Corpus académico sintético</title>
+  <meta name="identificador" content="FCC09">
+  <meta name="area_academica" content="Área de Ciencias Exactas y Tecnología">
+  <meta name="tipo_unidad_academica" content="Facultad">
+  <meta name="unidad_academica" content="Facultad de Ciencias de la Computación">
+  <meta name="topico_principal" content="Capas de comunicación, direccionamiento y transferencia de información">
+  <link rel="stylesheet" href="../../../styles.css">
+</head>
+<body>
+<nav aria-label="Navegación principal">
+<a href="../../../index.html">Inicio</a>
+<a href="index.html">Índice de la facultad</a>
+</nav>
+<main>
+<article>
+<header><h1>Redes de computadoras y comunicación de servicios</h1><dl class="metadatos"><dt>Identificador</dt><dd>FCC09</dd><dt>Área académica</dt><dd>Área de Ciencias Exactas y Tecnología</dd><dt>Tipo de unidad</dt><dd>Facultad</dd><dt>Unidad académica</dt><dd>Facultad de Ciencias de la Computación</dd><dt>Tópico principal</dt><dd>Capas de comunicación, direccionamiento y transferencia de información</dd></dl></header>
+<p>Las redes permiten que computadoras y servicios intercambien información mediante acuerdos de comunicación. Cuando una persona solicita un documento, intervienen componentes que identifican destinos, transportan datos y entregan una respuesta a la aplicación. Aunque la interfaz oculte estos pasos, su comportamiento afecta la consulta de colecciones digitales. Comprender las redes ayuda a interpretar demoras, interrupciones y diferencias entre disponibilidad local y acceso remoto. Para estudiarlas conviene separar funciones y observar cómo se relacionan, evitando atribuir todos los problemas de conexión a una única causa o a un solo dispositivo.</p>
+<section>
+<h2>Funciones organizadas en capas</h2>
+<p>La comunicación puede describirse mediante capas que resuelven responsabilidades diferentes. Algunas se ocupan del intercambio entre equipos cercanos; otras permiten alcanzar destinos a través de varias redes; otras ofrecen servicios de transporte a las aplicaciones. Esta separación conceptual facilita estudiar un problema sin tener que explicar simultáneamente todos los detalles del recorrido.</p>
+<p>Las capas cooperan mediante interfaces y añaden información de control a los datos. Al recibirlos, el destino interpreta esa información para entregar el contenido al componente correspondiente. La organización por capas no elimina dependencias: una falla en el acceso físico puede impedir cualquier intercambio superior. Sin embargo, distinguir responsabilidades permite formular pruebas específicas y localizar el nivel donde aparece una interrupción o una demora persistente.</p>
+</section>
+<section>
+<h2>Direccionamiento y nombres de servicios</h2>
+<p>Para enviar información es necesario identificar un destino alcanzable. Las direcciones cumplen funciones de localización dentro de la red, mientras que los nombres facilitan a las personas y aplicaciones referirse a servicios. La correspondencia entre ambos puede cambiar, de modo que reconocer un nombre y establecer comunicación con su destino son operaciones relacionadas pero distintas.</p>
+<p>Un servicio documental también necesita identificar qué aplicación atenderá la solicitud. Compartir un equipo no significa que todas las aplicaciones reciban los mismos mensajes. Al diagnosticar un acceso fallido conviene comprobar por separado resolución del nombre, conectividad y disponibilidad del servicio. Esta secuencia ayuda a distinguir un problema de localización de una aplicación detenida, sin suponer que una respuesta en una etapa garantiza el éxito de las demás.</p>
+</section>
+<section>
+<h2>Transporte y experiencia de consulta</h2>
+<p>El transporte organiza la comunicación entre extremos según las garantías que ofrece cada mecanismo. Algunas tareas necesitan entrega ordenada y control de pérdidas; otras priorizan continuidad temporal y toleran cierta información ausente. Elegir un mecanismo exige considerar los requisitos de la aplicación y cómo esta detectará o manejará resultados incompletos.</p>
+<p>La latencia expresa demora, mientras que la capacidad de transferencia se relaciona con la cantidad de datos que puede circular. Una colección con muchas solicitudes pequeñas puede verse afectada por esperas repetidas, aunque los archivos sean ligeros. En cambio, descargar documentos extensos hace más visible el volumen transferido. Medir ambos aspectos permite explicar por qué dos conexiones con comportamientos distintos producen experiencias diferentes al navegar y consultar información.</p>
+</section>
+<section>
+<h2>Diagnóstico mediante observaciones</h2>
+<p>Un diagnóstico comienza describiendo qué falla, desde dónde ocurre y si el comportamiento es permanente o intermitente. Comparar accesos desde distintos puntos ayuda a reconocer el alcance del problema. También conviene separar el tiempo necesario para conectar del tiempo que la aplicación utiliza para preparar la respuesta, porque cada demora sugiere una investigación diferente.</p>
+<p>Los ensayos deben registrar condiciones, tamaños de solicitud y momentos de medición. Repetir una prueba permite observar variaciones, pero sus resultados requieren contexto: otros procesos pueden competir por recursos durante el intercambio. En una práctica académica, presentar las observaciones junto con sus límites evita conclusiones apresuradas. El propósito es construir explicaciones comprobables sobre la comunicación que sostiene el acceso a la colección documental.</p>
+<p>La documentación de una incidencia debe conservar síntomas y comprobaciones realizadas. Ese registro permite comparar episodios y evita repetir diagnósticos desde cero cuando una interrupción reaparece bajo condiciones semejantes en la misma infraestructura de comunicación.</p>
+</section>
+<section class="relacionados" aria-labelledby="temas_relacionados">
+<h2 id="temas_relacionados">Temas relacionados</h2>
+<ul>
+<li><a href="sistemas_distribuidos.html">Sistemas distribuidos para servicios de información</a></li>
+<li><a href="seguridad_informacion.html">Seguridad de la información en sistemas documentales</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer><p>Corpus sintético para experimentación académica en Recuperación de Información. No constituye información oficial de la BUAP.</p></footer>
+</body>
+</html>

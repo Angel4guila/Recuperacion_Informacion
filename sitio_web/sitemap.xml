@@ -1,832 +1,832 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- PLANTILLA: sustituir http://localhost/sito_web/ por la URL real que sirva el index.html principal. No publicar con el dominio de ejemplo. -->
+  <!-- PLANTILLA: sustituir http://localhost/sitio_web/ por la URL real que sirva el index.html principal. No publicar con el dominio de ejemplo. -->
   <url>
-    <loc>http://localhost/sito_web/index.html</loc>
+    <loc>http://localhost/sitio_web/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/administracion_de_operaciones.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/administracion_de_operaciones.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/cultura_organizacional.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/cultura_organizacional.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/desarrollo_de_equipos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/desarrollo_de_equipos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/diseno_organizacional.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/diseno_organizacional.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/evaluacion_organizacional.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/evaluacion_organizacional.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/gestion_de_procesos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/gestion_de_procesos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/gestion_de_proyectos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/gestion_de_proyectos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/planeacion_estrategica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/planeacion_estrategica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/responsabilidad_organizacional.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/responsabilidad_organizacional.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_administracion/toma_de_decisiones.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/toma_de_decisiones.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/analisis_del_discurso.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/analisis_del_discurso.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/audiencias_y_recepcion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/audiencias_y_recepcion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_digital.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_digital.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_interpersonal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_interpersonal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_organizacional.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_organizacional.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/etica_de_la_comunicacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/etica_de_la_comunicacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/lenguajes_mediaticos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/lenguajes_mediaticos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/narrativa_transmedia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/narrativa_transmedia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/opinion_publica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/opinion_publica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/produccion_periodistica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/produccion_periodistica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/analisis_financiero.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/analisis_financiero.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/auditoria_y_evidencia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/auditoria_y_evidencia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/conciliacion_de_registros.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/conciliacion_de_registros.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/contabilidad_de_costos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/contabilidad_de_costos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/control_interno.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/control_interno.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/ecuacion_contable.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/ecuacion_contable.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/estados_financieros.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/estados_financieros.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/etica_contable.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/etica_contable.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/presupuestos_organizacionales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/presupuestos_organizacionales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/registro_de_operaciones.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/registro_de_operaciones.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/comercio_y_especializacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/comercio_y_especializacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/desarrollo_economico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/desarrollo_economico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/dinero_e_intercambio.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/dinero_e_intercambio.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/economia_ambiental.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/economia_ambiental.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/escasez_y_eleccion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/escasez_y_eleccion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/historia_del_pensamiento_economico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/historia_del_pensamiento_economico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/inflacion_y_precios.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/inflacion_y_precios.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/oferta_y_demanda.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/oferta_y_demanda.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/produccion_y_productividad.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/produccion_y_productividad.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_economico_administrativas/facultad_de_economia/trabajo_y_empleo.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/trabajo_y_empleo.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/calidad_datos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/calidad_datos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/evaluacion_buscadores.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/evaluacion_buscadores.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/indices_invertidos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/indices_invertidos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/metadatos_interoperabilidad.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/metadatos_interoperabilidad.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/modelado_bases_datos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/modelado_bases_datos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/procesamiento_consultas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/procesamiento_consultas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/recuperacion_informacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/recuperacion_informacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/redes_computadoras.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/redes_computadoras.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/seguridad_informacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/seguridad_informacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/sistemas_distribuidos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/sistemas_distribuidos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/accesibilidad_del_espacio.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/accesibilidad_del_espacio.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/conservacion_arquitectonica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/conservacion_arquitectonica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/diseno_bioclimatico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/diseno_bioclimatico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/espacio_publico_urbano.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/espacio_publico_urbano.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/evaluacion_posocupacional.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/evaluacion_posocupacional.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/habitabilidad_residencial.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/habitabilidad_residencial.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/lectura_del_sitio.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/lectura_del_sitio.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/programa_arquitectonico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/programa_arquitectonico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/representacion_espacial.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/representacion_espacial.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/sistemas_constructivos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/sistemas_constructivos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/circuitos_electricos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/circuitos_electricos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/comunicaciones_electronicas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/comunicaciones_electronicas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/electronica_analogica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/electronica_analogica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/electronica_de_potencia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/electronica_de_potencia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/instrumentacion_electronica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/instrumentacion_electronica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/logica_digital.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/logica_digital.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/senales_y_sistemas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/senales_y_sistemas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sensores_electronicos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sensores_electronicos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sistemas_de_control.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sistemas_de_control.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sistemas_embebidos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sistemas_embebidos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/algebra_lineal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/algebra_lineal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/calculo_diferencial.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/calculo_diferencial.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/funciones_matematicas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/funciones_matematicas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/inferencia_estadistica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/inferencia_estadistica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/limites_y_continuidad.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/limites_y_continuidad.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/mecanica_clasica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/mecanica_clasica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/modelacion_matematica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/modelacion_matematica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/optica_fisica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/optica_fisica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/probabilidad.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/probabilidad.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/termodinamica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/termodinamica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/calidad_de_procesos_industriales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/calidad_de_procesos_industriales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/diseno_de_ingenieria.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/diseno_de_ingenieria.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/estatica_estructural.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/estatica_estructural.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/ingenieria_de_transporte.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/ingenieria_de_transporte.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/investigacion_de_operaciones.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/investigacion_de_operaciones.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mantenimiento_de_sistemas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mantenimiento_de_sistemas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mecanica_de_fluidos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mecanica_de_fluidos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mecanica_de_suelos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mecanica_de_suelos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/resistencia_de_materiales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/resistencia_de_materiales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/topografia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/topografia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/balances_de_energia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/balances_de_energia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/balances_de_materia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/balances_de_materia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/control_de_procesos_quimicos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/control_de_procesos_quimicos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/integracion_de_procesos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/integracion_de_procesos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/operaciones_de_separacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/operaciones_de_separacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/reactores_quimicos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/reactores_quimicos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/seguridad_conceptual_de_procesos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/seguridad_conceptual_de_procesos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/simulacion_de_procesos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/simulacion_de_procesos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/transferencia_de_calor.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/transferencia_de_calor.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/transferencia_de_masa.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/transferencia_de_masa.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/agua_en_sistemas_agricolas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/agua_en_sistemas_agricolas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/bienestar_en_produccion_pecuaria.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/bienestar_en_produccion_pecuaria.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/diversidad_agroecologica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/diversidad_agroecologica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/manejo_integrado_de_organismos_asociados.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/manejo_integrado_de_organismos_asociados.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/nutricion_vegetal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/nutricion_vegetal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/propiedades_del_suelo_agricola.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/propiedades_del_suelo_agricola.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/rotacion_de_cultivos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/rotacion_de_cultivos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/semillas_y_germinacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/semillas_y_germinacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/sistemas_de_pastoreo.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/sistemas_de_pastoreo.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/sostenibilidad_agropecuaria.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/sostenibilidad_agropecuaria.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/biologia_de_la_conservacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/biologia_de_la_conservacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/ciclos_biogeoquimicos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/ciclos_biogeoquimicos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/comportamiento_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/comportamiento_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/comunidades_ecologicas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/comunidades_ecologicas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/diversidad_y_clasificacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/diversidad_y_clasificacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/ecologia_de_poblaciones.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/ecologia_de_poblaciones.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/evolucion_y_seleccion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/evolucion_y_seleccion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/herencia_biologica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/herencia_biologica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/microorganismos_y_ambiente.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/microorganismos_y_ambiente.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/organizacion_celular.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/organizacion_celular.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/cinetica_quimica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/cinetica_quimica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/disoluciones.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/disoluciones.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/enlace_quimico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/enlace_quimico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/equilibrio_quimico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/equilibrio_quimico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/espectroscopia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/espectroscopia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/estructura_atomica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/estructura_atomica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_ambiental_del_agua.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_ambiental_del_agua.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_analitica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_analitica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_de_materiales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_de_materiales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_organica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_organica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/comunicacion_en_el_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/comunicacion_en_el_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/concepto_de_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/concepto_de_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/continuidad_del_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/continuidad_del_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/educacion_para_el_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/educacion_para_el_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/etica_del_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/etica_del_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/investigacion_del_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/investigacion_del_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/observacion_de_necesidades.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/observacion_de_necesidades.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/registros_de_enfermeria.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/registros_de_enfermeria.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/salud_comunitaria_y_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/salud_comunitaria_y_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_enfermeria/seguridad_del_cuidado.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/seguridad_del_cuidado.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/anatomia_oral.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/anatomia_oral.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/biomateriales_dentales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/biomateriales_dentales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/educacion_en_salud_oral.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/educacion_en_salud_oral.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/imagen_en_estomatologia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/imagen_en_estomatologia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/investigacion_estomatologica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/investigacion_estomatologica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/microbiota_oral.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/microbiota_oral.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/oclusion_y_funcion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/oclusion_y_funcion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/periodonto.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/periodonto.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/saliva_y_ambiente_oral.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/saliva_y_ambiente_oral.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_estomatologia/tejidos_dentales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/tejidos_dentales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/bioetica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/bioetica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/determinantes_sociales_de_la_salud.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/determinantes_sociales_de_la_salud.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/disenos_de_investigacion_biomedica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/disenos_de_investigacion_biomedica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/epidemiologia_descriptiva.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/epidemiologia_descriptiva.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_cardiovascular.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_cardiovascular.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_renal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_renal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_respiratoria.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_respiratoria.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/homeostasis.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/homeostasis.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/inmunologia_basica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/inmunologia_basica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina/sistema_nervioso.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/sistema_nervioso.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/anatomia_comparada_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/anatomia_comparada_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/comportamiento_y_bienestar_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/comportamiento_y_bienestar_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/conservacion_de_fauna.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/conservacion_de_fauna.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/ecologia_de_parasitos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/ecologia_de_parasitos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/fisiologia_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/fisiologia_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/inocuidad_de_alimentos_de_origen_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/inocuidad_de_alimentos_de_origen_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/nutricion_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/nutricion_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/reproduccion_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/reproduccion_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/salud_integrada_humano_animal_ambiente.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/salud_integrada_humano_animal_ambiente.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/sistemas_de_produccion_animal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/sistemas_de_produccion_animal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/armonia_musical.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/armonia_musical.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/composicion_sonora.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/composicion_sonora.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/dramaturgia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/dramaturgia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/escucha_musical.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/escucha_musical.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/espacio_escenico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/espacio_escenico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/improvisacion_artistica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/improvisacion_artistica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/interpretacion_instrumental.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/interpretacion_instrumental.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/movimiento_y_danza.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/movimiento_y_danza.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/recepcion_de_las_artes.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/recepcion_de_las_artes.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes/ritmo_y_metrica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/ritmo_y_metrica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/animacion_visual.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/animacion_visual.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/arte_digital.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/arte_digital.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/composicion_visual.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/composicion_visual.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/curaduria_expositiva.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/curaduria_expositiva.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/dibujo_de_observacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/dibujo_de_observacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/escultura_y_materialidad.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/escultura_y_materialidad.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/fotografia_documental.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/fotografia_documental.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/montaje_audiovisual.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/montaje_audiovisual.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/narrativa_cinematografica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/narrativa_cinematografica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/teoria_del_color.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/teoria_del_color.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/accion_colectiva.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/accion_colectiva.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/analisis_de_redes_sociales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/analisis_de_redes_sociales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/cambio_social.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/cambio_social.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/desigualdad_social.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/desigualdad_social.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/gobernanza_territorial.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/gobernanza_territorial.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/instituciones_politicas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/instituciones_politicas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/metodos_cualitativos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/metodos_cualitativos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/movimientos_sociales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/movimientos_sociales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/participacion_ciudadana.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/participacion_ciudadana.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/politicas_publicas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/politicas_publicas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/aprendizaje_motor.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/aprendizaje_motor.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/biomecanica_del_movimiento.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/biomecanica_del_movimiento.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/coordinacion_motriz.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/coordinacion_motriz.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/evaluacion_motriz.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/evaluacion_motriz.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/expresion_corporal.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/expresion_corporal.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/inclusion_en_practicas_corporales.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/inclusion_en_practicas_corporales.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/juego_y_recreacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/juego_y_recreacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/pedagogia_de_la_actividad_fisica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/pedagogia_de_la_actividad_fisica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/planificacion_del_entrenamiento.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/planificacion_del_entrenamiento.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/sociologia_del_deporte.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/sociologia_del_deporte.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/argumentacion_juridica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/argumentacion_juridica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/derechos_y_garantias.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/derechos_y_garantias.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/etica_profesional_juridica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/etica_profesional_juridica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/hechos_y_prueba.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/hechos_y_prueba.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/interpretacion_juridica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/interpretacion_juridica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/investigacion_juridica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/investigacion_juridica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/norma_y_ordenamiento.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/norma_y_ordenamiento.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/relaciones_juridicas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/relaciones_juridicas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/resolucion_de_controversias.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/resolucion_de_controversias.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_derecho/responsabilidad_juridica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/responsabilidad_juridica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/analisis_de_fuentes_historicas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/analisis_de_fuentes_historicas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/analisis_literario.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/analisis_literario.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/argumentacion_filosofica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/argumentacion_filosofica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/etica_filosofica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/etica_filosofica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/gestion_documental_humanistica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/gestion_documental_humanistica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/hermeneutica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/hermeneutica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/linguistica_descriptiva.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/linguistica_descriptiva.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/narratologia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/narratologia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/temporalidad_historica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/temporalidad_historica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/teoria_del_conocimiento.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/teoria_del_conocimiento.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/adquisicion_de_lenguas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/adquisicion_de_lenguas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/competencia_intercultural.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/competencia_intercultural.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/comprension_lectora.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/comprension_lectora.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/diseno_de_materiales_linguisticos.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/diseno_de_materiales_linguisticos.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/evaluacion_de_lenguas.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/evaluacion_de_lenguas.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/fonetica_y_articulacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/fonetica_y_articulacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/gramatica_en_contexto.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/gramatica_en_contexto.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/interaccion_oral.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/interaccion_oral.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/produccion_escrita.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/produccion_escrita.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_lenguas/traduccion_y_equivalencia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/traduccion_y_equivalencia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/aprendizaje_psicologico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/aprendizaje_psicologico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/atencion_y_percepcion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/atencion_y_percepcion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/desarrollo_psicologico.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/desarrollo_psicologico.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/emocion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/emocion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/index.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/investigacion_experimental_en_psicologia.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/investigacion_experimental_en_psicologia.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/medicion_psicologica.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/medicion_psicologica.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/memoria.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/memoria.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/motivacion.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/motivacion.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/psicologia_comunitaria.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/psicologia_comunitaria.html</loc>
   </url>
   <url>
-    <loc>http://localhost/sito_web/area_ciencias_sociales_humanidades/facultad_de_psicologia/psicologia_social.html</loc>
+    <loc>http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/psicologia_social.html</loc>
   </url>
 </urlset>

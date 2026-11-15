@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistemas distribuidos para servicios de información | Corpus académico sintético</title>
+  <meta name="identificador" content="FCC08">
+  <meta name="area_academica" content="Área de Ciencias Exactas y Tecnología">
+  <meta name="tipo_unidad_academica" content="Facultad">
+  <meta name="unidad_academica" content="Facultad de Ciencias de la Computación">
+  <meta name="topico_principal" content="Particionamiento, replicación y coordinación de servicios">
+  <link rel="stylesheet" href="../../../styles.css">
+</head>
+<body>
+<nav aria-label="Navegación principal">
+<a href="../../../index.html">Inicio</a>
+<a href="index.html">Índice de la facultad</a>
+</nav>
+<main>
+<article>
+<header><h1>Sistemas distribuidos para servicios de información</h1><dl class="metadatos"><dt>Identificador</dt><dd>FCC08</dd><dt>Área académica</dt><dd>Área de Ciencias Exactas y Tecnología</dd><dt>Tipo de unidad</dt><dd>Facultad</dd><dt>Unidad académica</dt><dd>Facultad de Ciencias de la Computación</dd><dt>Tópico principal</dt><dd>Particionamiento, replicación y coordinación de servicios</dd></dl></header>
+<p>Un sistema distribuido coordina varios componentes conectados para ofrecer un servicio. En una colección documental, distintos equipos pueden almacenar archivos, mantener índices o atender consultas. La distribución permite repartir trabajo, pero introduce dificultades de comunicación, coordinación y recuperación ante fallos. Comprender estos compromisos exige observar el servicio completo y las dependencias entre sus partes. La separación física de componentes no garantiza por sí misma mayor capacidad ni disponibilidad. Sus efectos dependen de cómo se dividen los datos, se replican recursos y se resuelven operaciones que requieren información ubicada en lugares diferentes.</p>
+<section>
+<h2>Particionamiento de colecciones</h2>
+<p>Particionar consiste en dividir datos o tareas entre componentes. Una colección puede separarse por documentos, por temas o mediante una función sobre identificadores. Cada criterio distribuye la carga de manera diferente. Una división temática facilita ciertas consultas locales, aunque puede concentrar solicitudes en un grupo si ese tema recibe más atención.</p>
+<p>Las consultas que abarcan varias particiones requieren combinar respuestas. En un buscador, esto implica decidir qué componentes participan y cómo integrar sus resultados. También hay que observar tamaños y frecuencias de acceso, porque repartir cantidades iguales de documentos no asegura cantidades iguales de trabajo. Un experimento puede comparar varias divisiones utilizando las mismas consultas y registrar dónde se originan desequilibrios o tiempos de espera.</p>
+</section>
+<section>
+<h2>Replicación y consistencia</h2>
+<p>Replicar significa mantener copias de información en más de un componente. Las copias pueden facilitar acceso y recuperación ante fallos, pero las actualizaciones deben propagarse. Durante esa propagación, dos componentes podrían mostrar estados distintos del mismo recurso. El diseño debe establecer qué diferencias temporales admite y cómo se comunican a quienes utilizan el servicio.</p>
+<p>La consistencia depende de las garantías ofrecidas para leer y modificar información. Un catálogo de consulta y un registro de permisos pueden necesitar comportamientos diferentes. Por eso, las decisiones deben vincularse al significado de la operación. Mostrar temporalmente una descripción anterior no tiene necesariamente las mismas consecuencias que aceptar una autorización revocada. Identificar estas diferencias ayuda a formular requisitos verificables para cada parte del sistema.</p>
+</section>
+<section>
+<h2>Coordinación frente a fallos parciales</h2>
+<p>En un entorno distribuido, un componente puede dejar de responder mientras otros continúan funcionando. El silencio no indica de inmediato si existe un fallo, una demora o una interrupción de red. Los tiempos de espera permiten limitar cuánto se aguarda, aunque su elección puede provocar reintentos innecesarios cuando las respuestas simplemente llegan tarde.</p>
+<p>Los reintentos necesitan cuidado cuando una operación modifica información. Si el primer intento se ejecutó pero su confirmación se perdió, repetirlo podría duplicar efectos. Diseñar operaciones identificables y comprobar su estado ayuda a manejar esa incertidumbre. Asimismo, conviene definir qué funciones seguirán disponibles cuando falte un componente y qué información recibirá el usuario sobre respuestas parciales o temporalmente desactualizadas.</p>
+</section>
+<section>
+<h2>Observación y evaluación del servicio</h2>
+<p>Evaluar una arquitectura distribuida requiere observar tiempos de respuesta, errores y carga en distintos puntos. Medir únicamente el tiempo total puede ocultar que una fase concentra la mayor espera. Los registros correlacionados permiten seguir una solicitud y relacionar sus etapas, siempre que los identificadores utilizados sean consistentes entre componentes.</p>
+<p>Las pruebas deben incluir condiciones habituales y escenarios de interrupción controlada. Consultar una colección estable no revela cómo se comportan las actualizaciones simultáneas o la recuperación de una copia atrasada. Documentar tamaño, particiones, carga y fallos introducidos permite interpretar los resultados. El aprendizaje surge al relacionar las decisiones de arquitectura con efectos observables sobre la continuidad y la coherencia del servicio documental.</p>
+<p>También importa distinguir recuperación del servicio y recuperación de los datos. Un componente puede volver a responder antes de incorporar cambios recientes; verificar ambos estados evita interpretar una respuesta rápida como evidencia suficiente de restauración completa.</p>
+</section>
+<section class="relacionados" aria-labelledby="temas_relacionados">
+<h2 id="temas_relacionados">Temas relacionados</h2>
+<ul>
+<li><a href="redes_computadoras.html">Redes de computadoras y comunicación de servicios</a></li>
+<li><a href="seguridad_informacion.html">Seguridad de la información en sistemas documentales</a></li>
+<li><a href="metadatos_interoperabilidad.html">Metadatos e interoperabilidad documental</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer><p>Corpus sintético para experimentación académica en Recuperación de Información. No constituye información oficial de la BUAP.</p></footer>
+</body>
+</html>
