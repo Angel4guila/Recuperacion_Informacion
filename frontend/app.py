@@ -46,7 +46,7 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div class="search-box">
-        <h1>🔍 Mini-Google BUAP</h1>
+        <h1>Mini-Google <span style="color: rgb(11, 34, 184);">BUAP</span></h1>
         <form method="GET" action="/">
             <input type="text" name="q" value="{{ query }}" placeholder="Escribe tu búsqueda académica..." required>
             <input type="submit" value="Buscar">
