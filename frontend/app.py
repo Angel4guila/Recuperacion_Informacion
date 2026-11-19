@@ -75,14 +75,24 @@ def index():
     query = request.args.get("q", "")
     resultados_formateados = []
     
+    # 1. Obtener la IP actual (si entras desde el cel, agarra el 192.168..., si entras desde la lap, agarra localhost)
+    host_actual = request.host.split(':')[0] 
+
     if query:
+        # (Aquí asumo que ya le pusiste top_n=10, si no, déjalo en 5)
         resultados_crudos = buscar(query, indice, pagerank, total_docs)
+        
         for url, puntaje in resultados_crudos:
+            # 2. LA MAGIA: Reemplazamos 'localhost' por la IP real
+            url_corregida = url.replace("localhost", host_actual)
+            
             p_info = info_paginas.get(url, {})
             titulo = p_info.get("titulo", "Sin título").split('|')[0].strip()
             texto = p_info.get("texto", "Sin descripción.")
             resumen = " ".join(texto.split()[:25]) + "..."
-            resultados_formateados.append((url, puntaje, titulo, resumen))
+            
+            # 3. Guardamos la URL corregida en los resultados
+            resultados_formateados.append((url_corregida, puntaje, titulo, resumen))
             
     return render_template_string(HTML_TEMPLATE, query=query, resultados=resultados_formateados)
 
