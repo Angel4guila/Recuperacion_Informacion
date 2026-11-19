@@ -1,8 +1,0 @@
-Etapa 3: Procesamiento de Texto e Índice Invertido (45%)
-Objetivo: Crear la estructura para búsquedas rápidas.
-
-Tareas:
-
-Crear backend/indexer.py.
-Importar las funciones de tu SRI_base_1.py (normalización, stopwords, stemming).
-Leer el JSON del paso 2 y generar un Índice Invertido (un diccionario donde la llave es la palabra y el valor son los documentos donde aparece).

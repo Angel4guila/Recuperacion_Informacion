@@ -1,0 +1,32 @@
+## 5. Arquitectura de Red y Despliegue del Sistema
+
+Para garantizar el correcto funcionamiento del Mini-Buscador y simular un entorno de producción real, el sistema se desplegó sobre una infraestructura Linux (Fedora), utilizando una arquitectura Cliente-Servidor basada en microservicios. El ecosistema se divide en dos servidores independientes que operan en diferentes puertos de red.
+
+### 5.1. Servidor de Contenido Estático (Apache - Puerto 80)
+El corpus documental, compuesto por los 250 archivos HTML de las facultades de la BUAP, constituye el contenido estático del sistema. Estos archivos fueron alojados en el directorio raíz del servidor web Apache (`/var/www/html/sitio_web/`). 
+
+Apache opera por defecto en el puerto de red **80**, el estándar para el protocolo HTTP. Su función principal es recibir las peticiones de los navegadores web y entregar los documentos HTML, hojas de estilo (CSS) y archivos de configuración (`robots.txt`, `sitemap.xml`) tal cual fueron almacenados.
+
+### 5.2. Servidor de Lógica Dinámica (Flask - Puerto 5000)
+El motor de búsqueda (algoritmos TF-IDF y PageRank) y la interfaz gráfica requieren procesamiento en tiempo real en el servidor, por lo que no pueden ser archivos estáticos. Para ello, se implementó una aplicación web en Python utilizando el micro-framework **Flask**.
+
+Esta aplicación se ejecuta de manera independiente en el puerto **5000**. Cuando un usuario ingresa una consulta, Flask intercepta la petición, procesa los datos utilizando los índices JSON y devuelve dinámicamente una página HTML con los resultados ordenados.
+
+### 5.3. El concepto de IP vs. Puerto de Red
+Para el acceso externo al sistema desde otros dispositivos (como teléfonos móviles o computadoras en la misma red local), es fundamental comprender el direccionamiento de red:
+
+*   **Dirección IP (Capa de Red):** Identifica de manera lógica y única al dispositivo físico (la computadora servidor) dentro de la red local. En este proyecto, la dirección IP asignada al servidor es `192.168.100.22`.
+*   **Puerto (Capa de Transporte):** Identifica el servicio o aplicación específica que está escuchando dentro de ese dispositivo. 
+
+Si un cliente intenta conectarse únicamente a la IP (ej. `http://192.168.100.22`), el navegador asume por defecto el puerto 80 y accede a los documentos de Apache. Para poder acceder al motor de búsqueda, el cliente debe especificar el puerto 5000 (ej. `http://192.168.100.22:5000`).
+
+### 5.4. Configuración de Seguridad (Firewall)
+Por defecto, los sistemas operativos modernos como Fedora bloquean el tráfico entrante a puertos que no estén explícitamente autorizados. Para permitir que dispositivos externos consulten el motor de búsqueda dinámico, se utilizó la herramienta `firewall-cmd` para habilitar el tráfico TCP en el puerto 5000.
+
+Es importante destacar que esta apertura se configuró de manera **temporal** (sin la bandera `--permanent`). Esto es una buena práctica de seguridad en entornos de desarrollo, ya que garantiza que el puerto se cierre automáticamente al reiniciar el equipo, evitando exponer el servidor de pruebas de manera indefinida.
+
+### 5.5. Flujo de Interacción del Usuario
+1. El usuario (cliente) ingresa a `http://[IP_DEL_SERVIDOR]:5000` desde su navegador.
+2. Flask recibe la consulta, ejecuta el motor de búsqueda (TF-IDF + PageRank) y genera una lista de resultados.
+3. Flask detecta la IP del cliente y reescribe dinámicamente las URLs de los resultados, sustituyendo `localhost` por la IP del servidor.
+4. El usuario hace clic en un resultado y su navegador es redirigido al puerto 80, donde Apache le entrega el documento HTML correspondiente.

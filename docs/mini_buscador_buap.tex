@@ -1,0 +1,248 @@
+% Fuente UTF-8. Compilar con Tectonic o con pdfLaTeX (dos pasadas).
+% En Overleaf, este archivo puede usarse como documento principal.
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage[margin=24mm,headheight=16pt]{geometry}
+\usepackage{microtype,amsmath,amssymb,booktabs,tabularx,array,graphicx}
+\usepackage[table]{xcolor}
+\usepackage{caption,fancyhdr}
+\usepackage[colorlinks=true,linkcolor=navy,urlcolor=teal,citecolor=teal]{hyperref}
+\definecolor{navy}{HTML}{142B46}
+\definecolor{teal}{HTML}{006C72}
+\definecolor{muted}{HTML}{45586A}
+\definecolor{wash}{HTML}{EAF3F4}
+\hypersetup{pdftitle={Mini-Buscador Web Académico BUAP},pdfauthor={Albert Kliuver Lopez Huerta; Angel Manuel Aguila De Ita}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.23}
+\captionsetup{font=small,labelfont={bf,color=navy},skip=7pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{navy}\textbf{BUAP}\quad Recuperación de la Información}
+\fancyhead[R]{\small\sffamily\color{muted}Informe técnico}
+\fancyfoot[L]{\small\sffamily\color{muted}Mini-Buscador Web Académico}
+\fancyfoot[R]{\small\sffamily\color{navy}\thepage}
+\newcommand{\code}[1]{\texttt{\small #1}}
+\newcommand{\banner}[1]{\noindent\colorbox{wash}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\small\strut\hspace{4pt}#1\strut}}}
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0pt}{-2.2ex plus -.5ex}{1.1ex}{\Large\sffamily\bfseries\color{navy}}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}{-1.7ex plus -.4ex}{.65ex}{\large\sffamily\bfseries\color{teal}}}
+\makeatother
+% Cada llamada acepta ruta de la imagen, pie y etiqueta.
+% Si el archivo existe, LaTeX sustituye automáticamente el recuadro.
+\newcommand{\captura}[3]{%
+  \par\medskip
+  \noindent\begin{minipage}{\linewidth}\centering
+  \IfFileExists{#1}{%
+    \includegraphics[width=\linewidth,height=40mm,keepaspectratio]{#1}%
+  }{%
+    \setlength{\fboxsep}{6pt}%
+    \fcolorbox{teal!35}{wash}{%
+      \parbox[c][32mm][c]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \centering\sffamily\color{muted}Espacio para captura\\[4pt]
+      \footnotesize\nolinkurl{#1}}}%
+  }%
+  \captionof{figure}{#2}\label{#3}%
+  \end{minipage}\par
+}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\color{navy}\sffamily
+\vspace*{12mm}
+{\Large\bfseries Benemérita Universidad Autónoma de Puebla\par}
+\vspace{2mm}
+{\large Facultad de Ciencias de la Computación\par}
+\vspace{7mm}
+{\color{teal}\rule{\linewidth}{1.4pt}\par}
+\vspace{24mm}
+{\large\color{teal}\bfseries Reporte de aplicaciones\par}
+\vspace{5mm}
+{\fontsize{35}{39}\selectfont\bfseries Mini-Buscador\\ Web Académico\par}
+\vspace{6mm}
+{\Large Rastreo, indexación y clasificación de un corpus sintético de la BUAP\par}
+\vfill
+{\small\color{teal}\bfseries ASIGNATURA\par}
+{\large Recuperación de la Información\par}
+\vspace{6mm}
+{\small\color{teal}\bfseries INTEGRANTES\par}
+{\large Albert Kliuver Lopez Huerta\\ Angel Manuel Aguila De Ita\par}
+\vfill
+{\color{teal}\rule{\linewidth}{0.65pt}\par}
+{\small Puebla, México \hfill Noviembre de 2026\par}
+\end{titlepage}
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+\phantomsection
+\addcontentsline{toc}{section}{Resumen}
+\section*{Resumen}
+Se implementó un sistema de recuperación de información para un corpus académico sintético de la BUAP. El prototipo rastrea páginas HTML servidas por Apache, construye un índice invertido, estima la autoridad de cada URL mediante PageRank y ofrece búsquedas desde una interfaz web en Flask y una consola. El registro contiene 277 páginas, el índice reúne 2\,491 términos distintos y el archivo de PageRank contiene un valor por URL. A partir del registro se reprodujeron las frecuencias del índice y los puntajes de PageRank, que convergió en 17 iteraciones. Las consultas de prueba muestran cuándo predomina la coincidencia textual y cómo la autoridad favorece a la portada en ciertas búsquedas.
+
+\textbf{Palabras clave.} Recuperación de información, índice invertido, TF-IDF, PageRank, rastreo web.
+\vspace{9mm}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\section{Objetivo y arquitectura}
+El objetivo fue implementar y comprobar el flujo de un buscador web a pequeña escala, desde la recolección de documentos hasta la presentación de resultados ordenados. El corpus representa 25 facultades con diez artículos temáticos por facultad. Su carácter sintético permite estudiar el efecto de la organización del sitio y del vocabulario en la recuperación.
+
+\begin{minipage}{\linewidth}
+\centering
+\setlength{\fboxsep}{7pt}
+\begin{tabular}{c}
+\colorbox{wash}{\parbox{.82\linewidth}{\centering\sffamily\textbf{Apache / Fedora}\quad Corpus HTML, reglas y mapa del sitio}}\\[4pt]
+\(\downarrow\)\\[4pt]
+\colorbox{wash}{\parbox{.82\linewidth}{\centering\sffamily\textbf{Rastreo}\quad \code{crawler.py} $\to$ registro JSON}}\\[4pt]
+\(\swarrow\hspace{40mm}\searrow\)\\[4pt]
+\colorbox{wash}{\parbox{.38\linewidth}{\centering\sffamily\textbf{Índice invertido}\\\code{indexer.py}}}
+\quad
+\colorbox{wash}{\parbox{.38\linewidth}{\centering\sffamily\textbf{Autoridad}\\\code{pagerank.py}}}\\[4pt]
+\(\searrow\hspace{40mm}\swarrow\)\\[4pt]
+\colorbox{wash}{\parbox{.82\linewidth}{\centering\sffamily\textbf{Motor de búsqueda}\quad \code{motor\_busqueda.py}}}\\[4pt]
+\(\downarrow\)\\[4pt]
+\colorbox{wash}{\parbox{.82\linewidth}{\centering\sffamily\textbf{Interfaces}\quad Flask (\code{app.py}) y consola (\code{cli.py})}}
+\end{tabular}
+\captionof{figure}{Flujo de datos del prototipo. Las interfaces reutilizan el registro para mostrar títulos y fragmentos.}
+\end{minipage}
+
+\section{Fases de implementación}
+\subsection{Publicación del corpus}
+El equipo reportó el despliegue de Apache en Fedora bajo \path{/var/www/html/sitio_web/}. Los artículos y los índices de facultad se publican como páginas HTML. El mapa del sitio proporciona las URL iniciales del rastreo y las reglas de acceso se consultan bajo la ruta base del proyecto. El registro confirma que el rastreador localizó \code{robots.txt}, leyó la regla \code{Allow: /} y obtuvo el listado anunciado en \code{sitemap.xml}.
+
+\subsection{Rastreo y extracción de HTML}
+\code{crawler.py} comienza con la URL raíz y las del sitemap en una cola FIFO. Resuelve enlaces relativos, elimina fragmentos y evita encolar dos veces una misma URL normalizada. Comprueba las reglas aplicables antes de cada descarga, sigue enlaces internos permitidos y registra destinos externos y \code{nofollow}. Los valores por defecto son 300 páginas, 0,3 segundos de pausa y 10 segundos de espera máxima por petición. Con \code{HTMLParser} extrae título, descripción, H1, URL canónica, texto y otros metadatos. Los enlaces guían el recorrido. El JSON de páginas conserva el texto y los metadatos por URL.
+
+\clearpage
+\subsection{Procesamiento textual e índice invertido}
+\code{indexer.py} concatena el título, la descripción y el texto de cada página. Convierte a minúsculas, reemplaza etiquetas y caracteres ajenos al conjunto permitido, conserva letras acentuadas, separa tokens y elimina palabras vacías en español. Después aplica un \emph{stemmer} heurístico que elimina el primer sufijo compatible cuando quedan al menos tres letras. Por ejemplo, \code{medicina} se transforma en \code{medicin}. El índice almacena, para cada término, un mapa de URL a frecuencia bruta. El archivo de salida también registra el total de documentos y de términos distintos.
+
+\subsection{Construcción del grafo y PageRank}
+El script entregado como \path{pagerank(1).py} toma las URL rastreadas como nodos. Para cada página genera destinos hacia la raíz, hacia el índice de facultad deducido de su ruta cuando corresponde y hacia páginas cuyos títulos aparecen como subcadenas en el texto. Conserva los destinos que coinciden con URL del registro y deduplica cada conjunto de salidas. Por tanto, la autoridad depende de la navegación inferida por estas reglas y de las menciones de títulos. La matriz densa de NumPy tiene una fila por origen y una columna por destino.
+
+Sea \(N\) el número de nodos, \(k_i\) el número de destinos distintos de \(i\) y \(M_{ij}\) la probabilidad de transición de \(i\) a \(j\). Para una fila con salidas, \(M_{ij}=1/k_i\) si existe la arista \(i\to j\) y \(0\) en otro caso. Una fila sumidero asigna \(1/N\) a cada destino. El método de las potencias aplica la siguiente recurrencia de PageRank \cite{pagerank}.
+\begin{equation}
+r_j^{(0)}=\frac{1}{N},\qquad
+r_j^{(k+1)}=\frac{1-\alpha}{N}+\alpha\sum_{i=1}^{N}r_i^{(k)}M_{ij}.
+\end{equation}
+Se usa \(\alpha=0{,}85\), con lo que la distribución uniforme de teleportación recibe una masa de \(0{,}15\). La iteración se detiene cuando \(\lVert \mathbf r^{(k+1)}-\mathbf r^{(k)}\rVert_\infty<10^{-6}\) o tras 100 iteraciones. La salida asigna a cada URL su puntaje en orden descendente.
+
+\subsection{Recuperación y clasificación híbrida}
+\code{motor\_busqueda.py} convierte la consulta a minúsculas, separa por espacios y aplica el mismo recorte de sufijos. El índice sí aplica también limpieza de puntuación y filtrado de palabras vacías. Para cada token presente en el vocabulario, el motor visita las URL de su lista de ocurrencias. Con \(D\) documentos indexados y \(\mathrm{df}(t)\) documentos que contienen \(t\), aplica una variante de TF-IDF \cite{salton} con frecuencia bruta y logaritmo natural.
+\begin{equation}
+\mathrm{idf}(t)=\ln\!\left(\frac{D}{\mathrm{df}(t)}\right),\qquad
+w(t,d)=\mathrm{tf}(t,d)\,\mathrm{idf}(t).
+\end{equation}
+Si \(Q_d\) es la secuencia de tokens de la consulta presentes en \(d\), con repeticiones, el puntaje implementado es
+\begin{equation}
+S(d,q)=\sum_{t\in Q_d}\bigl[0{,}7\,w(t,d)+0{,}3\,(100\,r(d))\bigr].
+\end{equation}
+Los documentos con alguna coincidencia se ordenan por \(S\) y se devuelven hasta cinco. PageRank aporta por cada coincidencia, incluso si el token se repite. Los coeficientes 0,7 y 0,3 operan sobre escalas diferentes, así que la proporción efectiva de cada señal varía con la consulta y el documento.
+
+\clearpage
+\subsection{Interfaces de consulta}
+\code{app.py} carga el índice y PageRank al iniciar y recibe la consulta en el parámetro \code{q} de una petición GET. Presenta título, enlace, fragmento de hasta 25 palabras y puntaje. En la URL mostrada sustituye \code{localhost} por el nombre de host de la petición, conservando la URL original al buscar metadatos. Flask escucha en el puerto 5000 en todas las interfaces. Apache sirve las páginas de destino. \code{cli.py} comparte la función \code{buscar}, presenta fragmentos de hasta 22 palabras y admite \code{salir} para terminar la sesión.
+
+\section{Resultados y verificación}
+Las mediciones provienen de los tres JSON entregados. Se regeneró el índice con \code{procesar} y las mismas entradas de texto. Todas las frecuencias coincidieron con el índice guardado. El cálculo de PageRank con el script recibido convergió en la iteración 17 y reprodujo exactamente los valores guardados en el entorno de verificación. Las pruebas de consultas ejecutaron la función original \code{buscar} sobre los archivos entregados.
+
+\begin{minipage}{\linewidth}
+\captionof{table}{Cobertura del rastreo y consistencia entre las salidas.}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+\toprule
+\rowcolor{wash}\textbf{Indicador} & \textbf{Valor}\\
+\midrule
+URL del sitemap presentes en el rastreo & 276 de 276 (100\,\%)\\
+Páginas visitadas, incluida la URL inicial fuera del sitemap & 277\\
+Artículos temáticos / índices de facultad / URL de portada & 250 / 25 / 2\\
+Páginas bloqueadas / errores / destinos externos / destinos \code{nofollow} & 0 / 0 / 0 / 0\\
+Palabras registradas por artículo, mínimo / promedio / máximo & 626 / 658,9 / 715\\
+Documentos en el índice / nodos con PageRank & 277 / 277\\
+Términos distintos / pares término--URL & 2\,491 / 67\,471\\
+Masa total de PageRank, redondeada & 1,000000\\
+\bottomrule
+\end{tabularx}
+\end{minipage}
+
+\subsection{Efecto de la estructura del corpus}
+La raíz \path{/sitio_web/} obtuvo \(0{,}135063\), cerca del 13,51\,\% de la masa del grafo. Le siguieron los índices de Ingeniería (\(0{,}014502\)), Artes (\(0{,}014260\)) y Medicina (\(0{,}014193\)). La mediana de los índices de facultad fue \(0{,}010239\), frente a \(0{,}002251\) para los artículos. En esta ejecución, el índice de facultad con menor puntaje (\(0{,}008446\)) superó al artículo de mayor puntaje (\(0{,}004667\)). La concentración en la raíz es coherente con la regla que la añade como destino de todas las páginas.
+
+Las 277 URL del rastreo, del índice y de PageRank coinciden como conjuntos. Sin embargo, la raíz y \path{/sitio_web/index.html} tienen el mismo título y texto, con 297 palabras registradas en ambos casos. Se contabilizan como dos documentos porque sus URL son distintas. Esto puede ocupar más de un lugar en la lista y alterar la frecuencia documental de algunos términos.
+
+\clearpage
+\subsection{Consultas de prueba}
+\begin{minipage}{\linewidth}
+\captionof{table}{Primeros tres resultados devueltos por el motor, con puntajes redondeados.}
+\small
+\begin{tabularx}{\linewidth}{@{}l r X r@{}}
+\toprule
+\rowcolor{wash}\textbf{Consulta} & \textbf{Pos.} & \textbf{Resultado} & \textbf{Puntaje}\\
+\midrule
+medicina & 1 & Portada (\path{/sitio_web/}) & 7,4762\\
+         & 2 & Portada (\path{/sitio_web/index.html}) & 3,4406\\
+         & 3 & Índice de Medicina & 2,1380\\
+\addlinespace
+computación & 1 & Índice de Ciencias de la Computación & 6,7298\\
+            & 2 & Redes de computadoras y comunicación de servicios & 6,4861\\
+            & 3 & Portada (\path{/sitio_web/}) & 6,1932\\
+\addlinespace
+derecho & 1 & Derechos y garantías & 30,0411\\
+        & 2 & Ética profesional jurídica & 10,7790\\
+        & 3 & Investigación jurídica & 10,7662\\
+\bottomrule
+\end{tabularx}
+\end{minipage}
+
+Para \emph{medicina}, el término \code{medicin} aparece en 24 documentos y su frecuencia en la raíz es 2. La ecuación del motor produce \(0{,}7(2\ln(277/24))+30(0{,}135063297)\approx7{,}4762\). En ese resultado la autoridad aporta aproximadamente 4,0519 puntos y la señal textual, 3,4243. Para \emph{derecho}, un artículo temático encabeza la lista a pesar de la ventaja estructural de la portada.
+
+\emph{Computación} y \emph{computacion} devolvieron la misma lista con los mismos puntajes porque ambos tokens se reducen a \code{comput}. \emph{Medicina,} devolvió cero resultados al conservar la coma. Repetir \emph{medicina} duplicó los puntajes sin alterar el orden. Estos casos confirman el comportamiento de los sufijos, la puntuación y la acumulación por token.
+
+\section{Alcance y conclusiones}
+El prototipo integró rastreo, procesamiento textual, cálculo de autoridad y consulta sobre un corpus controlado. La cobertura completa del sitemap y la reproducción de las dos salidas derivadas respaldan la consistencia del flujo. Las consultas muestran que la mezcla puede promover tanto una página temática como una portada, según la frecuencia del término y la estructura del grafo.
+
+Las pruebas miden cobertura, consistencia y comportamiento de consultas concretas. La comparación de calidad entre TF-IDF solo y el modelo híbrido requeriría consultas con juicios de relevancia y métricas como precisión en cinco resultados o nDCG@5. La deduplicación de URL equivalentes y el uso de un mismo preprocesamiento para documentos y consultas abordarían los dos casos observados de duplicación y sensibilidad a la puntuación.
+
+Las mediciones se obtuvieron con los JSON y los scripts disponibles, sin repetir el rastreo en Apache ni comprobar el acceso desde un segundo dispositivo. El HTML y CSS independientes del corpus, \code{robots.txt} y \code{sitemap.xml} se documentaron a partir de la descripción del proyecto y las evidencias conservadas en el JSON de rastreo. Con el cliente de pruebas de Flask se verificó que la consulta \emph{computación} produce cinco resultados y que los enlaces incorporan el host de la petición. También se comprobó el mensaje ante una consulta sin coincidencias.
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Referencias}
+\begin{thebibliography}{9}
+\bibitem{salton} Salton, G. y Buckley, C. (1988). Term-weighting approaches in automatic text retrieval. \emph{Information Processing \& Management}, 24(5), 513--523. \href{https://doi.org/10.1016/0306-4573(88)90021-0}{doi:10.1016/0306-4573(88)90021-0}.
+\bibitem{pagerank} Page, L., Brin, S., Motwani, R. y Winograd, T. (1999). \emph{The PageRank Citation Ranking: Bringing Order to the Web}. Informe técnico 1999-66, Stanford InfoLab. \href{https://storm.cis.fordham.edu/~gweiss/selected-papers/classic-pagerank-paper.pdf}{Texto del informe}.
+\end{thebibliography}
+
+\appendix
+\section{Referencias al código y a los datos}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.31\linewidth}X@{}}
+\toprule
+\rowcolor{wash}\textbf{Archivo} & \textbf{Punto de entrada o evidencia}\\
+\midrule
+\path{crawler.py} & \code{rastrear}, \code{Robots.permite} y \code{ExtractorHTML}. Descarga, recorrido y extracción.\\
+\path{indexer.py} & \code{procesar} y \code{crear\_indice\_desde\_json}. Normalización y frecuencias por URL.\\
+\path{pagerank(1).py} & \path{construir_grafo_y_pagerank}. Aristas inferidas y método de las potencias.\\
+\path{motor_busqueda.py} & \code{buscar}. Consulta del índice, logaritmo natural, suma de señales y selección de cinco resultados.\\
+\path{cli.py} y \path{app.py} & \code{iniciar\_cli} e \code{index}. Presentación de resultados en consola y navegador.\\
+\path{resultados_rastreo(1).json} & Copia entregada del registro. Claves \code{paginas}, \code{robots}, \code{sitemap} y \code{estadisticas}.\\
+\path{indice_invertido.json} & Frecuencias por término y URL en \code{indice}. Totales en \code{estadisticas}.\\
+\path{pagerank.json} & Mapa de URL a puntaje.\\
+\bottomrule
+\end{tabularx}
+
+\subsection{Rutas de integración}
+En la estructura de trabajo, los scripts de preparación se ejecutan desde \path{backend/}. El rastreador escribe \path{data/sin_procesar/resultados_rastreo.json}. El índice se guarda en \path{data/indice/indice_invertido.json} y PageRank en \path{data/graph/pagerank.json}. Para reutilizar la copia entregada del registro, guárdese con el nombre \path{resultados_rastreo.json} en la ruta esperada. Una búsqueda puede comprobarse cargando esos JSON y pasando la consulta, el mapa \code{indice}, el mapa PageRank y \code{total\_documentos} a \code{buscar}.
+
+\clearpage
+\section{Capturas de implementación}
+Cree una carpeta \path{figuras/} junto al archivo \path{.tex} y guarde cada imagen con el nombre indicado. La compilación sustituye el recuadro por la imagen cuando encuentra el archivo. Si utiliza otro nombre o formato, edite el primer argumento de \verb|\captura|. El segundo argumento contiene el pie de figura. Puede recompilar con \verb|tectonic mini_buscador_buap.tex| o ejecutar pdfLaTeX dos veces para actualizar el índice y las referencias.
+
+% Sustituya estos nombres por los de sus archivos si usa otras rutas.
+\captura{figuras/corpus.png}{Portada del corpus servida por Apache. Deje visible la ruta del sitio y la navegación hacia las facultades.}{fig:corpus}
+
+\captura{figuras/rastreo.png}{Resumen del rastreador en consola. Encuadre las cifras de páginas visitadas, errores y cobertura del sitemap.}{fig:rastreo}
+
+\captura{figuras/busqueda.png}{Consulta \emph{computación} en Flask. Incluya el campo de búsqueda y los primeros resultados con sus puntajes. Para documentar el acceso desde otro equipo, muestre el host utilizado.}{fig:busqueda}
+\end{document}

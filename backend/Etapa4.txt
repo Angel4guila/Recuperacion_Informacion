@@ -1,8 +1,0 @@
-Etapa 4: Análisis de Enlaces y PageRank (60%)
-Objetivo: Medir la importancia estructural.
-
-Tareas:
-
-Crear backend/pagerank.py (usando tu código).
-Extraer el grafo de enlaces (quién apunta a quién) del JSON del paso 2.
-Ejecutar PageRank y guardar los puntajes en data/graph/pagerank.json.
