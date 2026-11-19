@@ -1,0 +1,44 @@
+para checar el estatus del servidor:
+sudo systemctl status httpd
+
+Mostrar el IP de forma directa
+hostname -I
+
+Muestra las intefaces de la red
+ip addr show
+
+para pruebas locales:
+127.0.0.1
+
+para probar desde otro dispositivo con la misma red:
+192.168.100.22
+
+para ver que no se perdio ningun paquete:
+find /var/www/html/sito_web -name "*.html" | wc -l
+
+# Copiar los dos archivos actualizados al servidor
+sudo cp ~/Buap/7moSemestre/RecuperacionInformacion/Proyecto/Recuperacion_Informacion/sitio_web/robots.txt /var/www/html/
+sudo cp ~/Buap/7moSemestre/RecuperacionInformacion/Proyecto/Recuperacion_Informacion/sitio_web/sitemap.xml /var/www/html/
+
+sudo cp -r ~/Buap/7moSemestre/RecuperacionInformacion/Proyecto/Recuperacion_Informacion/sitio_web/ /var/www/html/
+
+cambiar a permisos de admin
+sudo chown -R $USER:$USER /var/www/html/sitio_web
+
+Revisar Robots
+cat /var/www/html/sito_web/robots.txt
+
+Para revisar los primeros 10
+head -n 10 /var/www/html/sito_web/sitemap.xml
+
+# Restaurar los permisos de SELinux por si acaso
+sudo restorecon -Rv /var/www/html/sitio_web/
+
+Pasos para hacer una actualizacion
+
+
+Para abrir el servidor esa unica vez:
+sudo firewall-cmd --add-port=5000/tcp
+
+
+
