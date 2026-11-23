@@ -56,6 +56,13 @@ def validar_juicios(datos, urls_corpus):
     return k, particiones
 
 
+def cargar_juicios(ruta, indice, pagerank):
+    urls_corpus = set(pagerank)
+    for documentos in indice.values():
+        urls_corpus.update(documentos)
+    return validar_juicios(cargar_json(ruta), urls_corpus)
+
+
 def evaluar_consultas(consultas, indice, pagerank, total_docs, k, peso_texto):
     peso_pagerank = 1.0 - peso_texto
     resultados = []
@@ -104,13 +111,7 @@ def main():
     indice = datos_indice["indice"]
     total_docs = datos_indice["estadisticas"]["total_documentos"]
     pagerank = cargar_json(DATA_DIR / "graph" / "pagerank.json")
-    urls_corpus = set(pagerank)
-    for documentos in indice.values():
-        urls_corpus.update(documentos)
-
-    with args.juicios.open("r", encoding="utf-8") as archivo:
-        datos_juicios = json.load(archivo)
-    k, particiones = validar_juicios(datos_juicios, urls_corpus)
+    k, particiones = cargar_juicios(args.juicios, indice, pagerank)
 
     pesos_candidatos = [paso / 10 for paso in range(11)]
     evaluaciones_ajuste = {

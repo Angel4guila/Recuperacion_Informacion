@@ -4,6 +4,33 @@ import math
 import re
 from collections import Counter
 
+NOMBRES_AREAS = {
+    "area_ciencias_economico_administrativas": "Área de Ciencias Económico-Administrativas",
+    "area_ciencias_exactas_tecnologia": "Área de Ciencias Exactas y Tecnología",
+    "area_ciencias_naturales_salud": "Área de Ciencias Naturales y de la Salud",
+    "area_ciencias_sociales_humanidades": "Área de Ciencias Sociales y Humanidades",
+}
+
+
+def contexto_primer_resultado_del_corpus(resultados, info_paginas):
+    for url, _ in resultados:
+        base, separador, ruta = url.partition("/corpus/")
+        directorios = ruta.split("/")
+        if not separador or len(directorios) != 3:
+            continue
+        area, facultad, _ = directorios
+        url_facultad = f"{base}/corpus/{area}/{facultad}/index.html"
+        if area not in NOMBRES_AREAS or url_facultad not in info_paginas:
+            continue
+        titulo = info_paginas[url_facultad].get("titulo", "Sin título").split("|", 1)[0].strip()
+        return {
+            "facultad": titulo,
+            "url_facultad": url_facultad,
+            "area": NOMBRES_AREAS[area],
+        }
+    return None
+
+
 #Funcion stemming del indexer
 def stem_simple(palabra):
     sufijos = (
