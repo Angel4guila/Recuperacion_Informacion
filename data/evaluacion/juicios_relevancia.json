@@ -1,0 +1,405 @@
+{
+  "k": 5,
+  "consultas": [
+    {
+      "consulta": "Facultad de Administración",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/administracion_de_operaciones.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/cultura_organizacional.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/desarrollo_de_equipos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/diseno_organizacional.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/evaluacion_organizacional.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/gestion_de_procesos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/gestion_de_proyectos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/planeacion_estrategica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/responsabilidad_organizacional.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_administracion/toma_de_decisiones.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ciencias de la Comunicación",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/analisis_del_discurso.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/audiencias_y_recepcion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_digital.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_interpersonal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/comunicacion_organizacional.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/etica_de_la_comunicacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/lenguajes_mediaticos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/narrativa_transmedia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/opinion_publica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_ciencias_de_la_comunicacion/produccion_periodistica.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Contaduría Pública",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/analisis_financiero.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/auditoria_y_evidencia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/conciliacion_de_registros.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/contabilidad_de_costos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/control_interno.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/ecuacion_contable.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/estados_financieros.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/etica_contable.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/presupuestos_organizacionales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_contaduria_publica/registro_de_operaciones.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Economía",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/comercio_y_especializacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/desarrollo_economico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/dinero_e_intercambio.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/economia_ambiental.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/escasez_y_eleccion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/historia_del_pensamiento_economico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/inflacion_y_precios.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/oferta_y_demanda.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/produccion_y_productividad.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_economico_administrativas/facultad_de_economia/trabajo_y_empleo.html"
+      ]
+    },
+    {
+      "consulta": "la mejor carrera",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/calidad_datos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/evaluacion_buscadores.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/indices_invertidos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/metadatos_interoperabilidad.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/modelado_bases_datos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/procesamiento_consultas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/recuperacion_informacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/redes_computadoras.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/seguridad_informacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_ciencias_computacion/sistemas_distribuidos.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Arquitectura",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/accesibilidad_del_espacio.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/conservacion_arquitectonica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/diseno_bioclimatico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/espacio_publico_urbano.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/evaluacion_posocupacional.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/habitabilidad_residencial.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/lectura_del_sitio.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/programa_arquitectonico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/representacion_espacial.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_arquitectura/sistemas_constructivos.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ciencias de la Electrónica",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/circuitos_electricos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/comunicaciones_electronicas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/electronica_analogica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/electronica_de_potencia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/instrumentacion_electronica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/logica_digital.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/senales_y_sistemas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sensores_electronicos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sistemas_de_control.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_de_la_electronica/sistemas_embebidos.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ciencias Físico Matemáticas",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/algebra_lineal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/calculo_diferencial.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/funciones_matematicas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/inferencia_estadistica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/limites_y_continuidad.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/mecanica_clasica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/modelacion_matematica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/optica_fisica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/probabilidad.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ciencias_fisico_matematicas/termodinamica.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ingeniería",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/calidad_de_procesos_industriales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/diseno_de_ingenieria.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/estatica_estructural.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/ingenieria_de_transporte.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/investigacion_de_operaciones.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mantenimiento_de_sistemas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mecanica_de_fluidos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/mecanica_de_suelos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/resistencia_de_materiales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria/topografia.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ingeniería Química",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/balances_de_energia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/balances_de_materia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/control_de_procesos_quimicos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/integracion_de_procesos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/operaciones_de_separacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/reactores_quimicos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/seguridad_conceptual_de_procesos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/simulacion_de_procesos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/transferencia_de_calor.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_exactas_tecnologia/facultad_de_ingenieria_quimica/transferencia_de_masa.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ciencias Agrícolas y Pecuarias",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/agua_en_sistemas_agricolas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/bienestar_en_produccion_pecuaria.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/diversidad_agroecologica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/manejo_integrado_de_organismos_asociados.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/nutricion_vegetal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/propiedades_del_suelo_agricola.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/rotacion_de_cultivos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/semillas_y_germinacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/sistemas_de_pastoreo.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_agricolas_y_pecuarias/sostenibilidad_agropecuaria.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ciencias Biológicas",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/biologia_de_la_conservacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/ciclos_biogeoquimicos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/comportamiento_animal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/comunidades_ecologicas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/diversidad_y_clasificacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/ecologia_de_poblaciones.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/evolucion_y_seleccion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/herencia_biologica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/microorganismos_y_ambiente.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_biologicas/organizacion_celular.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ciencias Químicas",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/cinetica_quimica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/disoluciones.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/enlace_quimico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/equilibrio_quimico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/espectroscopia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/estructura_atomica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_ambiental_del_agua.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_analitica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_de_materiales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_ciencias_quimicas/quimica_organica.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Enfermería",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/comunicacion_en_el_cuidado.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/concepto_de_cuidado.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/continuidad_del_cuidado.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/educacion_para_el_cuidado.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/etica_del_cuidado.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/investigacion_del_cuidado.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/observacion_de_necesidades.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/registros_de_enfermeria.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/salud_comunitaria_y_cuidado.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_enfermeria/seguridad_del_cuidado.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Estomatología",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/anatomia_oral.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/biomateriales_dentales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/educacion_en_salud_oral.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/imagen_en_estomatologia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/investigacion_estomatologica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/microbiota_oral.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/oclusion_y_funcion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/periodonto.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/saliva_y_ambiente_oral.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_estomatologia/tejidos_dentales.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Medicina",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/bioetica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/determinantes_sociales_de_la_salud.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/disenos_de_investigacion_biomedica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/epidemiologia_descriptiva.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_cardiovascular.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_renal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/fisiologia_respiratoria.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/homeostasis.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/inmunologia_basica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina/sistema_nervioso.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Medicina Veterinaria y Zootecnia",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/anatomia_comparada_animal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/comportamiento_y_bienestar_animal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/conservacion_de_fauna.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/ecologia_de_parasitos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/fisiologia_animal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/inocuidad_de_alimentos_de_origen_animal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/nutricion_animal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/reproduccion_animal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/salud_integrada_humano_animal_ambiente.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_naturales_salud/facultad_de_medicina_veterinaria_y_zootecnia/sistemas_de_produccion_animal.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Artes",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/armonia_musical.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/composicion_sonora.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/dramaturgia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/escucha_musical.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/espacio_escenico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/improvisacion_artistica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/interpretacion_instrumental.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/movimiento_y_danza.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/recepcion_de_las_artes.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes/ritmo_y_metrica.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Artes Plásticas y Audiovisuales",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/animacion_visual.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/arte_digital.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/composicion_visual.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/curaduria_expositiva.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/dibujo_de_observacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/escultura_y_materialidad.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/fotografia_documental.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/montaje_audiovisual.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/narrativa_cinematografica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_artes_plasticas_y_audiovisuales/teoria_del_color.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Ciencias Políticas y Sociales",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/accion_colectiva.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/analisis_de_redes_sociales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/cambio_social.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/desigualdad_social.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/gobernanza_territorial.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/instituciones_politicas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/metodos_cualitativos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/movimientos_sociales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/participacion_ciudadana.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_ciencias_politicas_y_sociales/politicas_publicas.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Cultura Física",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/aprendizaje_motor.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/biomecanica_del_movimiento.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/coordinacion_motriz.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/evaluacion_motriz.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/expresion_corporal.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/inclusion_en_practicas_corporales.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/juego_y_recreacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/pedagogia_de_la_actividad_fisica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/planificacion_del_entrenamiento.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_cultura_fisica/sociologia_del_deporte.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Derecho",
+      "particion": "prueba",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/argumentacion_juridica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/derechos_y_garantias.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/etica_profesional_juridica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/hechos_y_prueba.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/interpretacion_juridica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/investigacion_juridica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/norma_y_ordenamiento.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/relaciones_juridicas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/resolucion_de_controversias.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_derecho/responsabilidad_juridica.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Filosofía y Letras",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/analisis_de_fuentes_historicas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/analisis_literario.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/argumentacion_filosofica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/etica_filosofica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/gestion_documental_humanistica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/hermeneutica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/linguistica_descriptiva.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/narratologia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/temporalidad_historica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_filosofia_y_letras/teoria_del_conocimiento.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Lenguas",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/adquisicion_de_lenguas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/competencia_intercultural.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/comprension_lectora.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/diseno_de_materiales_linguisticos.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/evaluacion_de_lenguas.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/fonetica_y_articulacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/gramatica_en_contexto.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/interaccion_oral.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/produccion_escrita.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_lenguas/traduccion_y_equivalencia.html"
+      ]
+    },
+    {
+      "consulta": "Facultad de Psicología",
+      "particion": "ajuste",
+      "relevantes": [
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/aprendizaje_psicologico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/atencion_y_percepcion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/desarrollo_psicologico.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/emocion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/investigacion_experimental_en_psicologia.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/medicion_psicologica.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/memoria.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/motivacion.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/psicologia_comunitaria.html",
+        "http://localhost/sitio_web/corpus/area_ciencias_sociales_humanidades/facultad_de_psicologia/psicologia_social.html"
+      ]
+    }
+  ]
+}
