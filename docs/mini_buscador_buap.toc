@@ -1,0 +1,21 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Resumen}{\es@scroman {i}}{section*.1}%
+\contentsline {section}{\numberline {1}Objetivo y arquitectura}{1}{section.1}%
+\contentsline {section}{\numberline {2}Fases de implementación}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Publicación del corpus}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Rastreo y extracción de HTML}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Procesamiento textual e índice invertido}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Construcción del grafo y PageRank}{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Recuperación y clasificación híbrida}{3}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Interfaces de consulta}{4}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Arquitectura de red, puerto 5000 y firewall}{5}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Resultados y verificación}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Efecto de la estructura del corpus}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Consultas de prueba}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Evaluación con juicios de relevancia}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Acceso desde otro dispositivo}{10}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Alcance y conclusiones}{12}{section.4}%
+\contentsline {section}{Referencias}{13}{section*.18}%
+\contentsline {section}{\numberline {A}Referencias al código y a los datos}{13}{section.A}%
+\contentsline {subsection}{\numberline {A.1}Rutas de integración}{13}{subsection.A.1}%
+\contentsline {section}{\numberline {B}Resultados por consulta}{14}{section.B}%
