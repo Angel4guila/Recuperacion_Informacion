@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.5}Construcción del grafo y PageRank}{3}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Motor de búsqueda}{4}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}Evaluación con juicios de relevancia}{4}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}Interfaces de consultas de prueba}{5}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.8}Interfaces de consultas etiquetadas}{5}{subsection.1.8}%
 \contentsline {section}{\numberline {2}Resultados y verificación}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Efecto de la estructura del corpus}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Resultados de consultas generales}{7}{subsection.2.2}%

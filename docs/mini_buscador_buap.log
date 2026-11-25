@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.11.18)  25 NOV 2026 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.11.18)  25 NOV 2026 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,8 +1358,8 @@ Package rerunfilecheck Warning: File `mini_buscador_buap.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `mini_buscador_buap.out':
-(rerunfilecheck)             Before: 3E3FC252932584904108E76DBB8E61A4;4426
-(rerunfilecheck)             After:  93CCFE77C60CD8C371280BCB993C7B27;4352.
+(rerunfilecheck)             Before: 93CCFE77C60CD8C371280BCB993C7B27;4352
+(rerunfilecheck)             After:  D579DA7CF22BAF98B08F41B2DCB2F538;4359.
  ) 
 Here is how much of TeX's memory you used:
  27619 strings out of 467310
@@ -1392,7 +1392,7 @@ s/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Angel Aguila/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Angel Aguila/AppData/
 Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Angel Aguila/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on mini_buscador_buap.pdf (15 pages, 3242720 bytes).
+Output written on mini_buscador_buap.pdf (15 pages, 3242639 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  59 named destinations out of 1000 (max. 500000)

@@ -212,7 +212,7 @@
 	\end{equation}
 	La interfaz las muestra en dos cortes: los \(k=5\) primeros resultados y toda la lista recuperada (\(k=N\), con \(N\) documentos recuperados). Como cada consulta tiene diez relevantes, con \(k=5\) el máximo posible es \(P@5=100\,\text{\char37}\), \(\mathrm{Recall}@5=50\,\text{\char37}\) y \(F1@5=66{,}67\,\text{\char37}\); un F1@5 de 53,3\,\% no es bajo respecto de ese techo.
 	
-	\subsection{Interfaces de consultas de prueba}
+	\subsection{Interfaces de consultas etiquetadas}
 	\code{app.py} carga el índice, PageRank, el registro y los juicios de relevancia al iniciar, y recibe la consulta en el parámetro \code{q} de una petición GET. Presenta de cinco en cinco el título, el enlace, un fragmento de hasta 25 palabras y el puntaje combinado, además de un panel con el número de documentos recuperados y la facultad y el área a las que pertenece la consulta (tomadas del primer resultado dentro de \path{/corpus/}). Si no hay resultados, propone una corrección ortográfica por distancia de edición sobre el vocabulario. Un selector de consultas de prueba (Figura~\ref{fig:selector}), que contiene las 25 consultas etiquetadas, activa el panel de evaluación de la Sección~\ref{sec:eval}. En la URL mostrada sustituye \code{localhost} por el host de la petición, conservando la URL original al buscar metadatos. \code{cli.py} comparte \code{buscar} y las funciones de evaluación, presenta fragmentos de hasta 22 palabras y admite \code{:pruebas}, \code{:siguiente}, \code{:anterior} y \code{salir}.
 	
 	\begin{figure}[H]
