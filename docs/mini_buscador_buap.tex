@@ -49,6 +49,7 @@
 \makeatletter
 \renewcommand{\section}{\@startsection{section}{1}{0pt}{-2.2ex plus -.5ex}{1.1ex}{\Large\sffamily\bfseries\color{navy}}}
 \renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}{-1.7ex plus -.4ex}{.65ex}{\large\sffamily\bfseries\color{teal}}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0pt}{-1.4ex plus -.3ex}{.5ex}{\normalsize\sffamily\bfseries\color{navy}}}
 \makeatother
 \begin{document}
 	\hypersetup{pageanchor=false}
@@ -131,10 +132,8 @@
 		\caption{Índice de la Facultad de Medicina (Área de Ciencias Naturales y de la Salud), con el enlace \code{Inicio} y la lista de sus documentos temáticos; la captura muestra los primeros nueve de los diez (MED01 a MED10). Esos diez documentos son el conjunto relevante de la consulta \emph{Facultad de Medicina} en los juicios de relevancia de la Sección~\ref{sec:eval}.}\label{fig:facultad}
 	\end{figure}
 	
-	\subsection{Rastreo y extracción de HTML}
-	\code{crawler.py} comienza con la URL raíz y las del sitemap en una cola FIFO. Resuelve enlaces relativos, elimina fragmentos y evita encolar dos veces una misma URL normalizada. Comprueba las reglas aplicables antes de cada descarga, sigue enlaces internos permitidos y registra destinos externos y \code{nofollow}. Los valores por defecto son 300 páginas, 0,3 segundos de pausa y 10 segundos de espera máxima por petición. Con \code{HTMLParser} extrae título, descripción, H1, URL canónica, texto y otros metadatos. Los enlaces guían el recorrido. El JSON de páginas conserva el texto y los metadatos por URL.
-	
-	La Figura~\ref{fig:rastreo} muestra una ejecución real: el rastreador lee \code{robots.txt} (una regla), obtiene 276 URL del sitemap, forma una cola de 277 con la raíz, y termina con 277 páginas, 0 bloqueadas y 0 errores. El resultado se guarda en \path{data/sin_procesar/resultados_rastreo.json}.
+	\subsection{Rastreo y extracción de HTML}\label{sec:motor}
+	\code{crawler.py} comienza con la URL raíz y las del sitemap en una cola FIFO. Resuelve enlaces relativos, elimina fragmentos y evita encolar dos veces una misma URL normalizada. Comprueba las reglas aplicables antes de cada descarga, sigue enlaces internos permitidos y registra destinos externos y \code{nofollow}. Los valores por defecto son 300 páginas, 0,3 segundos de pausa y 10 segundos de espera máxima por petición. Con \code{HTMLParser} extrae título, descripción, H1, URL canónica, texto y otros metadatos. Los enlaces guían el recorrido. El JSON de páginas conserva el texto y los metadatos por URL. La Figura~\ref{fig:rastreo} muestra una ejecución real: lee \code{robots.txt}, obtiene 276 URL del sitemap y termina con 277 páginas, 0 bloqueadas y 0 errores.
 	
 	\begin{figure}[!htbp]
 		\centering
@@ -149,13 +148,7 @@
 		\caption{Ejecución del rastreador sobre \code{http://localhost/sitio\_web/}. Se omiten las líneas intermedias del recorrido.}\label{fig:rastreo}
 	\end{figure}
 	
-	\subsection{Procesamiento textual e índice invertido}
-	\code{indexer.py} concatena el título, la descripción y el texto de cada página. Convierte a minúsculas, reemplaza etiquetas y caracteres ajenos al conjunto permitido, conserva letras acentuadas, separa tokens y elimina palabras vacías en español. Después aplica un \emph{stemmer} heurístico que elimina el primer sufijo compatible cuando quedan al menos tres letras. Por ejemplo, \code{medicina} se transforma en \code{medicin}. El índice almacena, para cada término, un mapa de URL a frecuencia bruta. El archivo de salida también registra el total de documentos y de términos distintos.
-	
-	Diez términos del vocabulario aparecen en los 277 documentos (entre ellos \emph{facultad}, \emph{ciencias}, \emph{académico}, \emph{corpus} e \emph{información}, por el texto común de la portada y de las páginas). Su idf es cero, un hecho que el motor aprovecha como se describe en la Sección~\ref{sec:motor}.
-	
-	\subsection{Construcción del grafo y PageRank}
-	El script \path{pagerank.py} toma las URL rastreadas como nodos. Para cada página genera destinos hacia la raíz, hacia el índice de facultad deducido de su ruta cuando corresponde y hacia páginas cuyos títulos aparecen como subcadenas en el texto. Conserva los destinos que coinciden con URL del registro y deduplica cada conjunto de salidas. Por tanto, la autoridad depende de la navegación inferida por estas reglas y de las menciones de títulos. La matriz densa de NumPy tiene una fila por origen y una columna por destino.
+	\textbf{Construcción del grafo y PageRank.} El script \path{pagerank.py} toma las URL rastreadas como nodos. Para cada página genera destinos hacia la raíz, hacia el índice de facultad deducido de su ruta cuando corresponde y hacia páginas cuyos títulos aparecen como subcadenas en el texto. Conserva los destinos que coinciden con URL del registro y deduplica cada conjunto de salidas. Por tanto, la autoridad depende de la navegación inferida por estas reglas y de las menciones de títulos. La matriz densa de NumPy tiene una fila por origen y una columna por destino.
 	
 	Sea \(N\) el número de nodos, \(k_i\) el número de destinos distintos de \(i\) y \(M_{ij}\) la probabilidad de transición de \(i\) a \(j\). Para una fila con salidas, \(M_{ij}=1/k_i\) si existe la arista \(i\to j\) y \(0\) en otro caso. Una fila sumidero asigna \(1/N\) a cada destino. El método de las potencias aplica la siguiente recurrencia de PageRank \cite{pagerank}.
 	\begin{equation}
@@ -164,8 +157,7 @@
 	\end{equation}
 	Se usa \(\alpha=0{,}85\), con lo que la distribución uniforme de teleportación recibe una masa de \(0{,}15\). La iteración se detiene cuando \(\lVert \mathbf r^{(k+1)}-\mathbf r^{(k)}\rVert_\infty<10^{-6}\) o tras 100 iteraciones. La salida asigna a cada URL su puntaje en orden descendente.
 	
-	\subsection{Recuperación y clasificación híbrida}\label{sec:motor}
-	\code{motor\_busqueda.py} convierte la consulta a minúsculas, la separa por espacios y aplica el mismo recorte de sufijos que el índice. A diferencia del índice, no limpia la puntuación ni filtra palabras vacías: un token como \code{medicina,} no existe en el vocabulario y no produce resultados, y una palabra vacía como \emph{la} simplemente no aporta porque no figura en el índice. Los tokens se deduplican, de modo que repetir un término no cambia el resultado.
+	\textbf{Recuperación y clasificación híbrida (Accionar del crawler).} Sobre lo recolectado, indexado (Sección~\ref{sec:indice}) y con la autoridad calculada sobre el grafo opera el motor de búsqueda. \code{motor\_busqueda.py} convierte la consulta a minúsculas, la separa por espacios y aplica el mismo recorte de sufijos que el índice. A diferencia del índice, no limpia la puntuación ni filtra palabras vacías: un token como \code{medicina,} no existe en el vocabulario y no produce resultados, y una palabra vacía como \emph{la} simplemente no aporta porque no figura en el índice. Los tokens se deduplican, de modo que repetir un término no cambia el resultado.
 	
 	Con \(D\) documentos indexados y \(\mathrm{df}(t)\) documentos que contienen \(t\), el motor usa una variante de TF-IDF \cite{salton} con frecuencia bruta y logaritmo natural, y solo considera los términos con \(0<\mathrm{df}(t)<D\).
 	\begin{equation}
@@ -180,6 +172,11 @@
 		S(d,q)=w_T\,\hat{T}(d,q)+w_R\,\hat{r}(d),\quad w_T+w_R=1.
 	\end{equation}
 	Los candidatos se ordenan por \(S\) (los empates, por URL) y se devuelven todos; las interfaces los muestran de cinco en cinco. Los pesos se leen de \path{data/evaluacion/pesos_ranking.json} cuando el archivo existe, y lo genera \code{evaluacion.py}; si no existe, se usan \(w_T=0{,}7\) y \(w_R=0{,}3\). La normalización pone ambas señales en \([0,1]\) y elimina el problema de escalas distintas del esquema anterior. Su efecto secundario es que, en cada consulta, el candidato de menor TF-IDF recibe 0 en la señal textual aunque contenga el término.
+	
+	\subsection{Procesamiento textual e índice invertido}\label{sec:indice}
+	\code{indexer.py} concatena el título, la descripción y el texto de cada página. Convierte a minúsculas, reemplaza etiquetas y caracteres ajenos al conjunto permitido, conserva letras acentuadas, separa tokens y elimina palabras vacías en español. Después aplica un \emph{stemmer} heurístico que elimina el primer sufijo compatible cuando quedan al menos tres letras. Por ejemplo, \code{medicina} se transforma en \code{medicin}. El índice almacena, para cada término, un mapa de URL a frecuencia bruta. El archivo de salida también registra el total de documentos y de términos distintos.
+	
+	Diez términos del vocabulario aparecen en los 277 documentos (entre ellos \emph{facultad}, \emph{ciencias}, \emph{académico}, \emph{corpus} e \emph{información}, por el texto común de la portada y de las páginas). Su idf es cero, un hecho que el motor aprovecha como se describe en la Sección~\ref{sec:motor}.
 	
 	\subsection{Interfaces de consulta}
 	\code{app.py} carga el índice, PageRank, el registro y los juicios de relevancia al iniciar, y recibe la consulta en el parámetro \code{q} de una petición GET. Presenta de cinco en cinco el título, el enlace, un fragmento de hasta 25 palabras y el puntaje combinado, además de un panel con el número de documentos recuperados y la facultad y el área a las que pertenece la consulta (tomadas del primer resultado dentro de \path{/corpus/}). Si no hay resultados, propone una corrección ortográfica por distancia de edición sobre el vocabulario. Un selector de consultas de prueba (Figura~\ref{fig:selector}), que contiene las 25 consultas etiquetadas, activa el panel de evaluación de la Sección~\ref{sec:eval}. En la URL mostrada sustituye \code{localhost} por el host de la petición, conservando la URL original al buscar metadatos. \code{cli.py} comparte \code{buscar} y las funciones de evaluación, presenta fragmentos de hasta 22 palabras y admite \code{:pruebas}, \code{:siguiente}, \code{:anterior} y \code{salir}.
@@ -197,7 +194,7 @@
 		\caption{Selector de consultas de prueba. Ambas interfaces ofrecen las mismas 25 consultas etiquetadas: 24 nombres de facultad y \emph{la mejor carrera}.}\label{fig:selector}
 	\end{figure}
 	
-	\subsection{Arquitectura de red, puerto 5000 y firewall}
+	\subsection{Arquitectura de red, puerto 5000 y firewall}\label{sec:red}
 	El sistema corre como dos servidores en el mismo equipo (Fedora). Apache, en el puerto 80, sirve los documentos HTML, \code{robots.txt} y \code{sitemap.xml}. Flask, en el puerto 5000 y en todas las interfaces (\code{0.0.0.0}), ejecuta el motor y la interfaz. Desde otro dispositivo de la red local se entra con la IP del servidor y el puerto 5000 (en las pruebas, \code{192.168.100.22:5000}); solo con la IP, el navegador usaría el puerto 80 y recibiría las páginas de Apache. Al abrir un resultado, el navegador pasa al puerto 80, donde Apache entrega el documento. Fedora bloquea por defecto el tráfico entrante a puertos no autorizados, así que se habilitó el 5000 con \code{firewall-cmd -{}-add-port=5000/tcp}, sin \code{-{}-permanent}: la regla es temporal y se pierde al reiniciar el equipo (Figura~\ref{fig:flask}).
 	
 	\begin{figure}[!htbp]
@@ -349,7 +346,45 @@
 	
 	El F1@5 crece al aumentar el peso del texto en ambas particiones. El máximo en ajuste se alcanza con \(w_T=1{,}0\) (F1@5 de 44,4\,\%), que en prueba llega a 50,7\,\%. La mezcla 0,7/0,3 obtiene 36,4\,\% y 42,7\,\%, es decir, 8,0 puntos porcentuales menos en ambas particiones, y PageRank solo (\(w_T=0\)) queda en 22,2\,\% y 18,7\,\%. En estos juicios, la autoridad por enlaces no mejora el ranking.
 	
-	La explicación está en el tipo de consulta. En una consulta por nombre de facultad, PageRank favorece a la portada (13,5\,\% de la masa) y a los índices de facultad, que no figuran entre los diez artículos etiquetados, y estos desplazan del top 5 a los esperados; en \emph{Facultad de Medicina}, la portada y su duplicado ocupan los lugares 1 y 2. Los peores casos (F1@5 de 0\,\% en Contaduría Pública e Ingeniería Química, y 13,3\,\% en Cultura Física) se deben a que uno de sus términos (\emph{pública}, \emph{química}, \emph{física}) es frecuente en artículos de otras facultades. El detalle de las 25 consultas está en el Apéndice~\ref{ap:consultas}.
+	La explicación está en el tipo de consulta. En una consulta por nombre de facultad, PageRank favorece a la portada (13,5\,\% de la masa) y a los índices de facultad, que no figuran entre los diez artículos etiquetados, y estos desplazan del top 5 a los esperados; en \emph{Facultad de Medicina}, la portada y su duplicado ocupan los lugares 1 y 2. Los peores casos (F1@5 de 0\,\% en Contaduría Pública e Ingeniería Química, y 13,3\,\% en Cultura Física) se deben a que uno de sus términos (\emph{pública}, \emph{química}, \emph{física}) es frecuente en artículos de otras facultades. El detalle de las 25 consultas está en la Tabla~\ref{tab:porconsulta}.
+	
+	\begin{table}[!htbp]
+		\centering
+		\caption{Resultados de las 25 consultas etiquetadas. P@5, Recall@5 y la primera columna de F1@5 corresponden a la mezcla 0,7/0,3; la segunda columna de F1@5, a TF-IDF solo. La última columna es el recall de la lista completa (mezcla 0,7/0,3).}\label{tab:porconsulta}
+		\scriptsize
+		\setlength{\tabcolsep}{3.5pt}
+		\begin{tabularx}{\linewidth}{@{}l X r r r r r r@{}}
+			\toprule
+			\rowcolor{wash}\textbf{Part.} & \textbf{Consulta} & \textbf{Recup.} & \textbf{P@5} & \textbf{R@5} & \textbf{F1@5 (0,7)} & \textbf{F1@5 (1,0)} & \textbf{Recall@N}\\
+			\midrule
+			Ajuste & Facultad de Ciencias de la Comunicación & 42 & 80\,\% & 40\,\% & 53,3\,\% & 53,3\,\% & 100\,\%\\
+			Ajuste & Facultad de Contaduría Pública & 33 & 0\,\% & 0\,\% & 0,0\,\% & 0,0\,\% & 100\,\%\\
+			Ajuste & la mejor carrera & 84 & 20\,\% & 10\,\% & 13,3\,\% & 13,3\,\% & 50\,\%\\
+			Ajuste & Facultad de Arquitectura & 14 & 100\,\% & 50\,\% & 66,7\,\% & 66,7\,\% & 100\,\%\\
+			Ajuste & Facultad de Ingeniería & 24 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Ajuste & Facultad de Ingeniería Química & 35 & 0\,\% & 0\,\% & 0,0\,\% & 0,0\,\% & 100\,\%\\
+			Ajuste & Facultad de Ciencias Químicas & 24 & 100\,\% & 50\,\% & 66,7\,\% & 66,7\,\% & 100\,\%\\
+			Ajuste & Facultad de Enfermería & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Ajuste & Facultad de Estomatología & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Ajuste & Facultad de Medicina & 24 & 20\,\% & 10\,\% & 13,3\,\% & 40,0\,\% & 100\,\%\\
+			Ajuste & Facultad de Artes & 24 & 60\,\% & 30\,\% & 40,0\,\% & 40,0\,\% & 100\,\%\\
+			Ajuste & Facultad de Ciencias Políticas y Sociales & 103 & 80\,\% & 40\,\% & 53,3\,\% & 66,7\,\% & 100\,\%\\
+			Ajuste & Facultad de Filosofía y Letras & 14 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Ajuste & Facultad de Lenguas & 14 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Ajuste & Facultad de Ciencias Físico Matemáticas & 40 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Prueba & Facultad de Psicología & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Prueba & Facultad de Administración & 14 & 80\,\% & 40\,\% & 53,3\,\% & 66,7\,\% & 100\,\%\\
+			Prueba & Facultad de Economía & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			Prueba & Facultad de Ciencias de la Electrónica & 15 & 100\,\% & 50\,\% & 66,7\,\% & 66,7\,\% & 100\,\%\\
+			Prueba & Facultad de Ciencias Agrícolas y Pecuarias & 15 & 80\,\% & 40\,\% & 53,3\,\% & 53,3\,\% & 100\,\%\\
+			Prueba & Facultad de Ciencias Biológicas & 29 & 60\,\% & 30\,\% & 40,0\,\% & 40,0\,\% & 100\,\%\\
+			Prueba & Facultad de Medicina Veterinaria y Zootecnia & 24 & 80\,\% & 40\,\% & 53,3\,\% & 66,7\,\% & 100\,\%\\
+			Prueba & Facultad de Artes Plásticas y Audiovisuales & 24 & 40\,\% & 20\,\% & 26,7\,\% & 40,0\,\% & 100\,\%\\
+			Prueba & Facultad de Cultura Física & 45 & 20\,\% & 10\,\% & 13,3\,\% & 13,3\,\% & 100\,\%\\
+			Prueba & Facultad de Derecho & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
 	
 	\begin{figure}[!htbp]
 		\centering
@@ -370,8 +405,19 @@
 		\caption{La misma evaluación en consola, con las mismas cifras que la interfaz web: documentos recuperados, relevantes etiquetados, métricas de ambos cortes y puesto de cada documento esperado.}\label{fig:evalcli}
 	\end{figure}
 	
+	
 	\subsection{Acceso desde otro dispositivo}
-	La Figura~\ref{fig:movil} muestra la aplicación abierta desde un teléfono en la misma red, en \code{192.168.100.22:5000}. La interfaz se adapta a pantalla estrecha y mantiene el selector de consultas, el panel de evaluación y los resultados. Los enlaces de resultados incorporan el host de la petición en lugar de \code{localhost}, de modo que el teléfono puede abrirlos en Apache.
+	La interfaz web de Flask es la misma en todos los casos; lo que cambia es el dispositivo desde el que se consulta.
+	
+	\subsubsection{General}
+	La interfaz, servida por \code{app.py}, reúne un campo de búsqueda con el botón \emph{Buscar}, un panel de consultas de prueba con el botón \emph{Evaluar}, un panel de información y la lista de resultados (Figuras~\ref{fig:selector}, \ref{fig:medicina} y~\ref{fig:evalweb}). Cada resultado es una tarjeta con la URL, el título enlazado, un fragmento de hasta 25 palabras y el puntaje de relevancia combinada (TF-IDF y PageRank). Los resultados se paginan de cinco en cinco, con el indicador de página (por ejemplo, \emph{Página 1 de 5}) y el enlace \emph{Siguiente}.
+	
+	El panel de información indica cuántos documentos se recuperaron y a qué facultad y área pertenece la consulta. Cuando se elige una consulta etiquetada y se pulsa \emph{Evaluar}, añade los relevantes etiquetados, las métricas de toda la lista (\(P@N\), Recall@N y F1@N), un bloque desplegable con las métricas de los cinco primeros y el puesto de cada documento esperado, con la marca \emph{fuera del top 5} cuando corresponde. En pantallas anchas los paneles ocupan una columna a la izquierda y los resultados la columna principal (Figura~\ref{fig:evalweb}); la consola ofrece la misma información (Figura~\ref{fig:evalcli}).
+	
+	\subsubsection{Otro dispositivo}
+	Para consultar desde un teléfono o desde otro equipo de la misma red local se abre la dirección del servidor con el puerto de Flask, \code{http://192.168.100.22:5000}, y se necesita que el puerto 5000 esté habilitado en el cortafuegos del servidor (Sección~\ref{sec:red}). La Figura~\ref{fig:movil} muestra la aplicación en un navegador móvil. En pantalla estrecha el diseño pasa a una sola columna: título, campo de búsqueda, selector de consultas, panel de información y, al final, los resultados; por eso el panel de evaluación queda entre el selector y la lista, en lugar de ocupar una columna lateral como en la Figura~\ref{fig:evalweb}.
+	
+	El selector se despliega como una lista del propio navegador móvil con las 25 consultas, y las métricas coinciden con las de la interfaz de escritorio y la consola; por ejemplo, para \emph{Facultad de Ciencias de la Comunicación} aparecen \(P@42=23{,}81\,\text{\char37}\) y, en el bloque de los cinco primeros, \(F1@5=53{,}33\,\text{\char37}\) (Figura~\ref{fig:movil2}). Los enlaces de resultados incorporan la IP del servidor en lugar de \code{localhost}, de modo que al tocar uno el teléfono pide el documento a Apache en el puerto 80; con \code{localhost}, el enlace apuntaría al propio teléfono y fallaría. La barra de direcciones muestra el icono de conexión no segura porque el tráfico viaja por HTTP sin cifrar dentro de la red local.
 	
 	\begin{figure}[!htbp]
 		\centering
@@ -390,6 +436,20 @@
 		\caption{Acceso desde un teléfono de la misma red a \code{192.168.100.22:5000}. La interfaz se adapta a pantalla estrecha y los enlaces de resultados usan la IP del servidor.}\label{fig:movil}
 	\end{figure}
 	
+	\begin{figure}[!htbp]
+		\centering
+		\begin{subfigure}[t]{.45\linewidth}\centering
+			\recorte{height=84mm}{imagenes/image10.png}{738}{1600}{0}{214}{738}{1510}
+			\caption{Selector de consultas desplegado.}
+		\end{subfigure}\hfill
+		\begin{subfigure}[t]{.45\linewidth}\centering
+			\recorte{height=84mm}{imagenes/image13.png}{738}{1600}{0}{100}{738}{1600}
+			\caption{Resultados de \emph{medicina}, con la IP del servidor en cada URL y el puntaje combinado.}
+		\end{subfigure}
+		\caption{Detalles de la consulta desde el teléfono: selector de las 25 consultas etiquetadas y resultados desplazados.}\label{fig:movil2}
+	\end{figure}
+	
+	
 	\FloatBarrier
 	\section{Alcance y conclusiones}
 	El prototipo integró rastreo, procesamiento textual, cálculo de autoridad, consulta y evaluación sobre un corpus controlado. La cobertura completa del sitemap y la reproducción de las dos salidas derivadas respaldan la consistencia del flujo. El filtro de términos con idf nulo evita que las consultas devuelvan todo el corpus, y la normalización por mínimo y máximo vuelve comparables las dos señales del ranking.
@@ -400,13 +460,6 @@
 	
 	\clearpage
 	\phantomsection
-	\addcontentsline{toc}{section}{Referencias}
-	\begin{thebibliography}{9}
-		\bibitem{salton} Salton, G. y Buckley, C. (1988). Term-weighting approaches in automatic text retrieval. \emph{Information Processing \& Management}, 24(5), 513--523. \href{https://doi.org/10.1016/0306-4573(88)90021-0}{doi:10.1016/0306-4573(88)90021-0}.
-		\bibitem{pagerank} Page, L., Brin, S., Motwani, R. y Winograd, T. (1999). \emph{The PageRank Citation Ranking: Bringing Order to the Web}. Informe técnico 1999-66, Stanford InfoLab. \href{https://storm.cis.fordham.edu/~gweiss/selected-papers/classic-pagerank-paper.pdf}{Texto del informe}.
-	\end{thebibliography}
-	
-	\appendix
 	\section{Referencias al código y a los datos}
 	Repositorio: \href{https://github.com/Angel4guila/Recuperacion_Informacion}{github.com/Angel4guila/Recuperacion\_Informacion}.
 	
@@ -432,42 +485,9 @@
 	\subsection{Rutas de integración}
 	Los scripts de preparación \path{crawler.py}, \path{indexer.py} y \path{pagerank.py} se ejecutan desde \path{backend/}. El rastreador escribe \path{data/sin_procesar/resultados_rastreo.json}, el índice se guarda en \path{data/indice/indice_invertido.json} y PageRank en \path{data/graph/pagerank.json}. La evaluación se ejecuta desde la raíz con \code{python backend/evaluacion.py}; la interfaz web con \code{python app.py} desde \path{frontend/}. Una búsqueda puede comprobarse cargando esos JSON y pasando la consulta, el mapa \code{indice}, el mapa PageRank y \code{total\_documentos} a \code{buscar}.
 	
-	\section{Resultados por consulta}\label{ap:consultas}
-	\begin{table}[!htbp]
-		\centering
-		\caption{Resultados de las 25 consultas etiquetadas. P@5, Recall@5 y la primera columna de F1@5 corresponden a la mezcla 0,7/0,3; la segunda columna de F1@5, a TF-IDF solo. La última columna es el recall de la lista completa (mezcla 0,7/0,3).}
-		\scriptsize
-		\setlength{\tabcolsep}{3.5pt}
-		\begin{tabularx}{\linewidth}{@{}l X r r r r r r@{}}
-			\toprule
-			\rowcolor{wash}\textbf{Part.} & \textbf{Consulta} & \textbf{Recup.} & \textbf{P@5} & \textbf{R@5} & \textbf{F1@5 (0,7)} & \textbf{F1@5 (1,0)} & \textbf{Recall@N}\\
-			\midrule
-			Ajuste & Facultad de Ciencias de la Comunicación & 42 & 80\,\% & 40\,\% & 53,3\,\% & 53,3\,\% & 100\,\%\\
-			Ajuste & Facultad de Contaduría Pública & 33 & 0\,\% & 0\,\% & 0,0\,\% & 0,0\,\% & 100\,\%\\
-			Ajuste & la mejor carrera & 84 & 20\,\% & 10\,\% & 13,3\,\% & 13,3\,\% & 50\,\%\\
-			Ajuste & Facultad de Arquitectura & 14 & 100\,\% & 50\,\% & 66,7\,\% & 66,7\,\% & 100\,\%\\
-			Ajuste & Facultad de Ingeniería & 24 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Ajuste & Facultad de Ingeniería Química & 35 & 0\,\% & 0\,\% & 0,0\,\% & 0,0\,\% & 100\,\%\\
-			Ajuste & Facultad de Ciencias Químicas & 24 & 100\,\% & 50\,\% & 66,7\,\% & 66,7\,\% & 100\,\%\\
-			Ajuste & Facultad de Enfermería & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Ajuste & Facultad de Estomatología & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Ajuste & Facultad de Medicina & 24 & 20\,\% & 10\,\% & 13,3\,\% & 40,0\,\% & 100\,\%\\
-			Ajuste & Facultad de Artes & 24 & 60\,\% & 30\,\% & 40,0\,\% & 40,0\,\% & 100\,\%\\
-			Ajuste & Facultad de Ciencias Políticas y Sociales & 103 & 80\,\% & 40\,\% & 53,3\,\% & 66,7\,\% & 100\,\%\\
-			Ajuste & Facultad de Filosofía y Letras & 14 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Ajuste & Facultad de Lenguas & 14 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Ajuste & Facultad de Psicología & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Prueba & Facultad de Administración & 14 & 80\,\% & 40\,\% & 53,3\,\% & 66,7\,\% & 100\,\%\\
-			Prueba & Facultad de Economía & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Prueba & Facultad de Ciencias de la Electrónica & 15 & 100\,\% & 50\,\% & 66,7\,\% & 66,7\,\% & 100\,\%\\
-			Prueba & Facultad de Ciencias Físico Matemáticas & 40 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			Prueba & Facultad de Ciencias Agrícolas y Pecuarias & 15 & 80\,\% & 40\,\% & 53,3\,\% & 53,3\,\% & 100\,\%\\
-			Prueba & Facultad de Ciencias Biológicas & 29 & 60\,\% & 30\,\% & 40,0\,\% & 40,0\,\% & 100\,\%\\
-			Prueba & Facultad de Medicina Veterinaria y Zootecnia & 24 & 80\,\% & 40\,\% & 53,3\,\% & 66,7\,\% & 100\,\%\\
-			Prueba & Facultad de Artes Plásticas y Audiovisuales & 24 & 40\,\% & 20\,\% & 26,7\,\% & 40,0\,\% & 100\,\%\\
-			Prueba & Facultad de Cultura Física & 45 & 20\,\% & 10\,\% & 13,3\,\% & 13,3\,\% & 100\,\%\\
-			Prueba & Facultad de Derecho & 13 & 60\,\% & 30\,\% & 40,0\,\% & 53,3\,\% & 100\,\%\\
-			\bottomrule
-		\end{tabularx}
-	\end{table}
+	\addcontentsline{toc}{section}{Referencias}
+	\begin{thebibliography}{9}
+		\bibitem{salton} Salton, G. y Buckley, C. (1988). Term-weighting approaches in automatic text retrieval. \emph{Information Processing \& Management}, 24(5), 513--523. \href{https://doi.org/10.1016/0306-4573(88)90021-0}{doi:10.1016/0306-4573(88)90021-0}.
+		\bibitem{pagerank} Page, L., Brin, S., Motwani, R. y Winograd, T. (1999). \emph{The PageRank Citation Ranking: Bringing Order to the Web}. Informe técnico 1999-66, Stanford InfoLab. \href{https://storm.cis.fordham.edu/~gweiss/selected-papers/classic-pagerank-paper.pdf}{Texto del informe}.
+	\end{thebibliography}
 \end{document}

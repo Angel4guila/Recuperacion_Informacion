@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.26)  23 NOV 2026 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.26)  24 NOV 2026 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,7 +776,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \recB=\skip74
 \recR=\skip75
 \recT=\skip76
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 53
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 54
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -794,26 +794,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `mini_buscador_buap.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -849,13 +849,13 @@ LaTeX Info: Redefining \% on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 53.
-Package microtype Info: Applying patch `item' on input line 53.
-Package microtype Info: Applying patch `toc' on input line 53.
-Package microtype Info: Applying patch `eqnum' on input line 53.
-Package microtype Info: Applying patch `footnote' on input line 53.
-Package microtype Info: Applying patch `verbatim' on input line 53.
-LaTeX Info: Redefining \microtypesetup on input line 53.
+LaTeX Info: Redefining \microtypecontext on input line 54.
+Package microtype Info: Applying patch `item' on input line 54.
+Package microtype Info: Applying patch `toc' on input line 54.
+Package microtype Info: Applying patch `eqnum' on input line 54.
+Package microtype Info: Applying patch `footnote' on input line 54.
+Package microtype Info: Applying patch `verbatim' on input line 54.
+LaTeX Info: Redefining \microtypesetup on input line 54.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -895,15 +895,15 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 54.
 
 (./mini_buscador_buap.out) (./mini_buscador_buap.out)
 \@outlinefile=\write4
 \openout4 = `mini_buscador_buap.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 54.
+Package hyperref Info: Option `pageanchor' set `false' on input line 55.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
-6.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -916,37 +916,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/lm/lm-ec.enc}]
-Package hyperref Info: Option `pageanchor' set `true' on input line 80.
+Package hyperref Info: Option `pageanchor' set `true' on input line 81.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-4.
+5.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-4.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-84.
+85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-84.
+85.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 84.
+(Font)              <10.95> on input line 85.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 84.
+(Font)              <8> on input line 85.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 84.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+(Font)              <6> on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -955,7 +955,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -979,7 +979,7 @@ LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 89.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 90.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
@@ -987,7 +987,7 @@ Package microtype Info: Character `029' is missing
 [1{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/t
 exlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-01.
+02.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -996,203 +996,222 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<imagenes/Captura de pantalla_20261118_203633.png, id=128, 625.58719pt x 606.01
+<imagenes/Captura de pantalla_20261118_203633.png, id=122, 625.58719pt x 606.01
 407pt>
 File: imagenes/Captura de pantalla_20261118_203633.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_203633.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_203633.png  used
- on input line 123.
+ on input line 124.
 (pdftex.def)             Requested size: 625.58566pt x 606.01259pt.
 File: imagenes/Captura de pantalla_20261118_203633.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_203633.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_203633.png  used
- on input line 123.
+ on input line 124.
 (pdftex.def)             Requested size: 236.46994pt x 239.56384pt.
-<imagenes/Captura de pantalla_20261118_203754.png, id=131, 624.83438pt x 516.42
+<imagenes/Captura de pantalla_20261118_203754.png, id=125, 624.83438pt x 516.42
 938pt>
 File: imagenes/Captura de pantalla_20261118_203754.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_203754.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_203754.png  used
- on input line 124.
+ on input line 125.
 (pdftex.def)             Requested size: 624.83286pt x 516.42812pt.
 File: imagenes/Captura de pantalla_20261118_203754.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_203754.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_203754.png  used
- on input line 124.
+ on input line 125.
 (pdftex.def)             Requested size: 236.46994pt x 197.83337pt.
-<imagenes/image8.png, id=135, 1397.22pt x 740.0147pt>
+<imagenes/image8.png, id=129, 1397.22pt x 740.0147pt>
 File: imagenes/image8.png Graphic file (type png)
 <use imagenes/image8.png>
-Package pdftex.def Info: imagenes/image8.png  used on input line 130.
+Package pdftex.def Info: imagenes/image8.png  used on input line 131.
 (pdftex.def)             Requested size: 1397.21661pt x 740.0129pt.
 File: imagenes/image8.png Graphic file (type png)
 <use imagenes/image8.png>
-Package pdftex.def Info: imagenes/image8.png  used on input line 130.
+Package pdftex.def Info: imagenes/image8.png  used on input line 131.
 (pdftex.def)             Requested size: 267.52303pt x 304.66034pt.
- [1
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<imagenes/Captura de pantalla_20261118_204016.png, id=149, 966.61125pt x 523.95
+<imagenes/Captura de pantalla_20261118_204016.png, id=134, 966.61125pt x 523.95
 75pt>
 File: imagenes/Captura de pantalla_20261118_204016.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_204016.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_204016.png  used
- on input line 142.
+ on input line 141.
 (pdftex.def)             Requested size: 966.6089pt x 523.95622pt.
 File: imagenes/Captura de pantalla_20261118_204016.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_204016.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_204016.png  used
- on input line 142.
+ on input line 141.
 (pdftex.def)             Requested size: 449.05963pt x 136.39597pt.
-<imagenes/Captura de pantalla_20261118_204216.png, id=151, 966.61125pt x 523.95
+<imagenes/Captura de pantalla_20261118_204216.png, id=136, 966.61125pt x 523.95
 75pt>
 File: imagenes/Captura de pantalla_20261118_204216.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_204216.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_204216.png  used
- on input line 146.
+ on input line 145.
 (pdftex.def)             Requested size: 966.6089pt x 523.95622pt.
 File: imagenes/Captura de pantalla_20261118_204216.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_204216.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_204216.png  used
- on input line 146.
+ on input line 145.
 (pdftex.def)             Requested size: 449.05963pt x 66.44962pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 147.
+(Font)              <9> on input line 146.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 147.
- [2 <./imagenes/Captura de pantalla_20261118_203633.png> <./imagenes/Captura de
- pantalla_20261118_203754.png>]
-[3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./imagenes/
-image8.png>] [4 <./imagenes/Captura de pantalla_20261118_204016.png> <./imagene
-s/Captura de pantalla_20261118_204216.png>]
-<imagenes/image4.png, id=199, 1396.4672pt x 737.75626pt>
+(Font)              <5> on input line 146.
+ [1
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [2{/usr/share
+/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./imagenes/Captura de pa
+ntalla_20261118_203633.png> <./imagenes/Captura de pantalla_20261118_203754.png
+>] [3 <./imagenes/image8.png>]
+<imagenes/image4.png, id=181, 1396.4672pt x 737.75626pt>
 File: imagenes/image4.png Graphic file (type png)
 <use imagenes/image4.png>
-Package pdftex.def Info: imagenes/image4.png  used on input line 190.
+Package pdftex.def Info: imagenes/image4.png  used on input line 187.
 (pdftex.def)             Requested size: 1396.46379pt x 737.75446pt.
 File: imagenes/image4.png Graphic file (type png)
 <use imagenes/image4.png>
-Package pdftex.def Info: imagenes/image4.png  used on input line 190.
+Package pdftex.def Info: imagenes/image4.png  used on input line 187.
 (pdftex.def)             Requested size: 118.4461pt x 261.76535pt.
-<imagenes/image.png, id=201, 487.8225pt x 534.49687pt>
+<imagenes/image.png, id=183, 487.8225pt x 534.49687pt>
 File: imagenes/image.png Graphic file (type png)
 <use imagenes/image.png>
-Package pdftex.def Info: imagenes/image.png  used on input line 194.
+Package pdftex.def Info: imagenes/image.png  used on input line 191.
 (pdftex.def)             Requested size: 238.91602pt x 261.76535pt.
-<imagenes/Captura de pantalla_20261118_204511.png, id=203, 758.835pt x 204.765p
+ [4 <./imagenes/Captura de pantalla_20261118_204016.png> <./imagenes/Captura de
+ pantalla_20261118_204216.png>]
+<imagenes/Captura de pantalla_20261118_204511.png, id=198, 758.835pt x 204.765p
 t>
 File: imagenes/Captura de pantalla_20261118_204511.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_204511.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_204511.png  used
- on input line 207.
+ on input line 204.
 (pdftex.def)             Requested size: 429.94669pt x 116.0205pt.
-<imagenes/Captura de pantalla_20261118_205225.png, id=204, 770.12718pt x 61.730
+<imagenes/Captura de pantalla_20261118_205225.png, id=199, 770.12718pt x 61.730
 62pt>
 File: imagenes/Captura de pantalla_20261118_205225.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_205225.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_205225.png  used
- on input line 215.
+ on input line 212.
 (pdftex.def)             Requested size: 429.94669pt x 34.46246pt.
-<imagenes/Captura de pantalla_20261118_205315.png, id=205, 770.12718pt x 107.65
+<imagenes/Captura de pantalla_20261118_205315.png, id=200, 770.12718pt x 107.65
 219pt>
 File: imagenes/Captura de pantalla_20261118_205315.png Graphic file (type png)
 <use imagenes/Captura de pantalla_20261118_205315.png>
 Package pdftex.def Info: imagenes/Captura de pantalla_20261118_205315.png  used
- on input line 219.
+ on input line 216.
 (pdftex.def)             Requested size: 429.94669pt x 60.09918pt.
  [5 <./imagenes/image.png> <./imagenes/image4.png>] [6 <./imagenes/Captura de p
 antalla_20261118_204511.png> <./imagenes/Captura de pantalla_20261118_205225.pn
 g> <./imagenes/Captura de pantalla_20261118_205315.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 256.
+(Font)              <10> on input line 253.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 256.
-<imagenes/image7.png, id=225, 1397.22pt x 740.0147pt>
+(Font)              <7> on input line 253.
+<imagenes/image7.png, id=220, 1397.22pt x 740.0147pt>
 File: imagenes/image7.png Graphic file (type png)
 <use imagenes/image7.png>
-Package pdftex.def Info: imagenes/image7.png  used on input line 284.
+Package pdftex.def Info: imagenes/image7.png  used on input line 281.
 (pdftex.def)             Requested size: 1397.21661pt x 740.0129pt.
 File: imagenes/image7.png Graphic file (type png)
 <use imagenes/image7.png>
-Package pdftex.def Info: imagenes/image7.png  used on input line 284.
+Package pdftex.def Info: imagenes/image7.png  used on input line 281.
 (pdftex.def)             Requested size: 270.67973pt x 250.38425pt.
-<imagenes/image2.png, id=227, 1052.43187pt x 580.41844pt>
+<imagenes/image2.png, id=222, 1052.43187pt x 580.41844pt>
 File: imagenes/image2.png Graphic file (type png)
 <use imagenes/image2.png>
-Package pdftex.def Info: imagenes/image2.png  used on input line 288.
+Package pdftex.def Info: imagenes/image2.png  used on input line 285.
 (pdftex.def)             Requested size: 1052.4293pt x 580.41702pt.
 File: imagenes/image2.png Graphic file (type png)
 <use imagenes/image2.png>
-Package pdftex.def Info: imagenes/image2.png  used on input line 288.
+Package pdftex.def Info: imagenes/image2.png  used on input line 285.
 (pdftex.def)             Requested size: 458.61612pt x 176.39429pt.
  [7] [8 <./imagenes/image7.png> <./imagenes/image2.png>]
-Overfull \hbox (7.52661pt too wide) in alignment at lines 319--319
+Overfull \hbox (7.52661pt too wide) in alignment at lines 316--316
 [][][][][][] 
  []
 
 [9]
-<imagenes/image5.png, id=258, 1396.4672pt x 737.75626pt>
+<imagenes/image5.png, id=253, 1396.4672pt x 737.75626pt>
 File: imagenes/image5.png Graphic file (type png)
 <use imagenes/image5.png>
-Package pdftex.def Info: imagenes/image5.png  used on input line 357.
+Package pdftex.def Info: imagenes/image5.png  used on input line 392.
 (pdftex.def)             Requested size: 1396.46379pt x 737.75446pt.
 File: imagenes/image5.png Graphic file (type png)
 <use imagenes/image5.png>
-Package pdftex.def Info: imagenes/image5.png  used on input line 357.
+Package pdftex.def Info: imagenes/image5.png  used on input line 392.
 (pdftex.def)             Requested size: 315.17749pt x 256.0748pt.
-<imagenes/image6.png, id=260, 210.7875pt x 737.75626pt>
+<imagenes/image6.png, id=255, 210.7875pt x 737.75626pt>
 File: imagenes/image6.png Graphic file (type png)
 <use imagenes/image6.png>
-Package pdftex.def Info: imagenes/image6.png  used on input line 361.
+Package pdftex.def Info: imagenes/image6.png  used on input line 396.
 (pdftex.def)             Requested size: 73.1624pt x 256.0748pt.
-<imagenes/image1.png, id=261, 1052.43187pt x 513.41812pt>
+<imagenes/image1.png, id=256, 1052.43187pt x 513.41812pt>
 File: imagenes/image1.png Graphic file (type png)
 <use imagenes/image1.png>
-Package pdftex.def Info: imagenes/image1.png  used on input line 369.
+Package pdftex.def Info: imagenes/image1.png  used on input line 404.
 (pdftex.def)             Requested size: 1052.4293pt x 513.41685pt.
 File: imagenes/image1.png Graphic file (type png)
 <use imagenes/image1.png>
-Package pdftex.def Info: imagenes/image1.png  used on input line 369.
+Package pdftex.def Info: imagenes/image1.png  used on input line 404.
 (pdftex.def)             Requested size: 343.96027pt x 218.6586pt.
-<imagenes/image9.png, id=264, 740.7675pt x 1606.0pt>
+ [10] [11 <./imagenes/image6.png> <./imagenes/image5.png> <./imagenes/image1.pn
+g>]
+<imagenes/image9.png, id=284, 740.7675pt x 1606.0pt>
 File: imagenes/image9.png Graphic file (type png)
 <use imagenes/image9.png>
-Package pdftex.def Info: imagenes/image9.png  used on input line 379.
+Package pdftex.def Info: imagenes/image9.png  used on input line 425.
 (pdftex.def)             Requested size: 740.76569pt x 1605.99611pt.
 File: imagenes/image9.png Graphic file (type png)
 <use imagenes/image9.png>
-Package pdftex.def Info: imagenes/image9.png  used on input line 379.
+Package pdftex.def Info: imagenes/image9.png  used on input line 425.
 (pdftex.def)             Requested size: 142.9288pt x 239.00314pt.
-<imagenes/image11.png, id=266, 740.7675pt x 1606.0pt>
+<imagenes/image11.png, id=286, 740.7675pt x 1606.0pt>
 File: imagenes/image11.png Graphic file (type png)
 <use imagenes/image11.png>
-Package pdftex.def Info: imagenes/image11.png  used on input line 383.
+Package pdftex.def Info: imagenes/image11.png  used on input line 429.
 (pdftex.def)             Requested size: 740.76569pt x 1605.99611pt.
 File: imagenes/image11.png Graphic file (type png)
 <use imagenes/image11.png>
-Package pdftex.def Info: imagenes/image11.png  used on input line 383.
+Package pdftex.def Info: imagenes/image11.png  used on input line 429.
 (pdftex.def)             Requested size: 142.9288pt x 239.00314pt.
-<imagenes/image12.png, id=268, 740.7675pt x 1606.0pt>
+<imagenes/image12.png, id=288, 740.7675pt x 1606.0pt>
 File: imagenes/image12.png Graphic file (type png)
 <use imagenes/image12.png>
-Package pdftex.def Info: imagenes/image12.png  used on input line 387.
+Package pdftex.def Info: imagenes/image12.png  used on input line 433.
 (pdftex.def)             Requested size: 740.76569pt x 1605.99611pt.
 File: imagenes/image12.png Graphic file (type png)
 <use imagenes/image12.png>
-Package pdftex.def Info: imagenes/image12.png  used on input line 387.
+Package pdftex.def Info: imagenes/image12.png  used on input line 433.
 (pdftex.def)             Requested size: 142.9288pt x 239.00314pt.
- [10 <./imagenes/image6.png> <./imagenes/image5.png>] [11 <./imagenes/image1.pn
-g> <./imagenes/image9.png> <./imagenes/image11.png> <./imagenes/image12.png>] [
-12]
-Underfull \hbox (badness 6859) in paragraph at lines 430--430
+<imagenes/image10.png, id=290, 740.7675pt x 1606.0pt>
+File: imagenes/image10.png Graphic file (type png)
+<use imagenes/image10.png>
+Package pdftex.def Info: imagenes/image10.png  used on input line 442.
+(pdftex.def)             Requested size: 740.76569pt x 1605.99611pt.
+File: imagenes/image10.png Graphic file (type png)
+<use imagenes/image10.png>
+Package pdftex.def Info: imagenes/image10.png  used on input line 442.
+(pdftex.def)             Requested size: 136.09036pt x 239.00314pt.
+<imagenes/image13.png, id=292, 740.7675pt x 1606.0pt>
+File: imagenes/image13.png Graphic file (type png)
+<use imagenes/image13.png>
+Package pdftex.def Info: imagenes/image13.png  used on input line 446.
+(pdftex.def)             Requested size: 740.76569pt x 1605.99611pt.
+File: imagenes/image13.png Graphic file (type png)
+<use imagenes/image13.png>
+Package pdftex.def Info: imagenes/image13.png  used on input line 446.
+(pdftex.def)             Requested size: 117.58705pt x 239.00314pt.
+ [12 <./imagenes/image9.png> <./imagenes/image11.png> <./imagenes/image12.png>]
+ [13 <./imagenes/image10.png> <./imagenes/image13.png>]
+Underfull \hbox (badness 6859) in paragraph at lines 483--483
 []|\T1/lmr/m/n/10.95 (+20) Registro del ras-treo. Cla-ves \T1/lmtt/m/n/10 pagin
 as\T1/lmr/m/n/10.95 (+20) , \T1/lmtt/m/n/10 robots\T1/lmr/m/n/10.95 (+20) , \T1
 /lmtt/m/n/10 sitemap \T1/lmr/m/n/10.95 (+20) y
  []
 
-[13
+[14
 
-] [14] (./mini_buscador_buap.aux
+] (./mini_buscador_buap.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1208,14 +1227,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `mini_buscador_buap.out' has not changed.
-(rerunfilecheck)             Checksum: 55315EE178566E0A26CD438896B13C89;3904.
+(rerunfilecheck)             Checksum: 20968003E1C06B7868A5B91CA6A4056E;3502.
  ) 
 Here is how much of TeX's memory you used:
- 27175 strings out of 467363
- 497150 string characters out of 5419001
- 954261 words of memory out of 6000000
- 55464 multiletter control sequences out of 15000+600000
- 774105 words of font info for 257 fonts, out of 8000000 for 9000
+ 27202 strings out of 467363
+ 497692 string characters out of 5419001
+ 953750 words of memory out of 6000000
+ 55479 multiletter control sequences out of 15000+600000
+ 774726 words of font info for 263 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,94p,1146b,869s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/t
@@ -1235,10 +1254,10 @@ are/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lm
 tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on mini_buscador_buap.pdf (16 pages, 2418144 bytes).
+Output written on mini_buscador_buap.pdf (16 pages, 3161708 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
+ 439 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
  60 named destinations out of 1000 (max. 500000)
- 85845 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 85859 words of extra memory for PDF output out of 89155 (max. 10000000)
 
