@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string, request
+from flask import Flask, render_template_string, request, send_file
 import sys
 from pathlib import Path
 
@@ -61,8 +61,47 @@ HTML_TEMPLATE = """
     <title>Mini-Google BUAP</title>
     <style>
         * { box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #333; }
-        .container { max-width: 1180px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 40px); }
+        body {
+            --texto: #f8fafb;
+            --texto-suave: #d6dde0;
+            --borde-vidrio: rgba(255, 255, 255, .23);
+            --superficie-vidrio: rgba(17, 23, 28, .79);
+            --filtro-fondo: rgba(9, 13, 16, .24);
+            isolation: isolate;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #141a1f;
+            color: var(--texto);
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            z-index: -1;
+            inset: 0;
+            background: linear-gradient(var(--filtro-fondo), var(--filtro-fondo)),
+                        url("{{ url_for('fondo') }}") 60% center / cover no-repeat;
+            pointer-events: none;
+        }
+        .has-results { --filtro-fondo: rgba(9, 13, 16, .5); }
+        .has-results::before { inset: -24px; filter: blur(18px); }
+        .container {
+            max-width: 1240px;
+            margin-inline: max(0px, calc((100% - 1280px) / 2)) auto;
+            padding: 28px clamp(16px, 3vw, 36px);
+        }
+        .home .container {
+            display: grid;
+            align-content: center;
+            min-height: 100vh;
+            min-height: 100svh;
+        }
+        .home .layout {
+            grid-template-columns: minmax(0, 540px);
+            grid-template-areas: "content" "side";
+            gap: 18px;
+        }
+        .home .test-form { max-width: 355px; }
         .layout {
             display: grid;
             grid-template-columns: minmax(0, 290px) minmax(0, 1fr);
@@ -70,68 +109,109 @@ HTML_TEMPLATE = """
             gap: 24px;
             align-items: start;
         }
-        .side-column { grid-area: side; display: grid; gap: 14px; color: #253248; }
+        .side-column { grid-area: side; display: grid; gap: 14px; }
         .search-column { grid-area: content; display: grid; gap: 16px; min-width: 0; }
-        .panel { background: white; padding: 18px; border: 1px solid #dfe5ef; border-radius: 12px; }
+        .panel, .result, .primary-form input, button, .pagination {
+            background: var(--superficie-vidrio);
+            border: 1px solid var(--borde-vidrio);
+            backdrop-filter: blur(12px);
+        }
+        .panel { padding: 18px; border-radius: 16px; }
         .panel h2 { font-size: 16px; margin: 0 0 12px; }
         .panel p { font-size: 14px; line-height: 1.45; margin: 8px 0 0; }
-        .panel a { color: #214cb0; overflow-wrap: anywhere; }
+        .panel a { color: inherit; overflow-wrap: anywhere; text-underline-offset: 3px; }
         .search-panel { align-self: stretch; display: grid; gap: 10px; align-content: start; }
-        .search-panel label { font-size: 16px; font-weight: bold; }
-        .test-form select { width: 100%; min-width: 0; padding: 10px 8px; font: inherit; border: 1px solid #c4cfe0; border-radius: 8px; background: white; }
-        .search-panel :is(input, select, button) { min-height: 42px; font-size: 14px; }
-        .test-form button { padding-inline: 10px; }
-        button { border: 0; border-radius: 8px; padding: 10px 15px; background: #2455bb; color: white; font: inherit; cursor: pointer; }
-        button:hover { background: #1c4497; }
+        .test-form { position: relative; z-index: 1; }
+        .test-form h2 { margin: 0; }
+        .test-picker { position: relative; min-width: 0; }
+        .test-picker summary {
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            min-height: 42px; padding: 10px 12px; border: 1px solid var(--borde-vidrio);
+            border-radius: 10px; background: rgba(255, 255, 255, .08);
+            font-size: 14px; list-style: none; cursor: pointer;
+        }
+        .test-picker summary::-webkit-details-marker { display: none; }
+        .test-picker summary::after {
+            content: ""; flex: 0 0 7px; height: 7px; border: solid var(--texto-suave);
+            border-width: 0 1px 1px 0; transform: rotate(45deg);
+        }
+        .test-picker[open] summary::after { transform: rotate(225deg); }
+        .test-options {
+            position: absolute; inset: calc(100% + 8px) 0 auto; max-height: min(320px, 36vh);
+            margin: 0; padding: 6px; list-style: none; overflow: auto; overscroll-behavior: contain;
+            scrollbar-width: thin; scrollbar-color: #78948f #253036;
+            border: 1px solid var(--borde-vidrio); border-radius: 12px;
+            background: rgba(27, 34, 39, .97); backdrop-filter: blur(16px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, .32);
+        }
+        .home .test-options { inset: auto 0 calc(100% + 8px); }
+        .test-options button {
+            width: 100%; padding: 9px 10px; font-size: 14px; line-height: 1.35; text-align: left;
+            background: none; backdrop-filter: none; border-color: transparent;
+        }
+        .test-options button:is(:hover, :focus-visible, [aria-current="true"]) {
+            background: rgba(171, 218, 209, .14);
+            color: #c1ebe2;
+        }
+        .test-options button:focus-visible { outline-offset: -2px; }
+        button { border-radius: 8px; padding: 10px 15px; color: inherit; font: inherit; cursor: pointer; }
+        button:hover { background: rgba(52, 59, 64, .88); }
+        :focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
         .search-box { max-width: 590px; margin: 0 auto 28px; text-align: center; }
         .search-box h1 { margin: 0 0 14px; font-size: clamp(24px, 4vw, 32px); }
         .search-box h1 a { color: inherit; text-decoration: none; }
         .search-box h1 a:hover { text-decoration: underline; text-underline-offset: 5px; }
-        .search-box span { color: rgb(11, 34, 184); }
+        .home .search-box { max-width: 540px; margin: 0 0 12px; text-align: left; }
+        .home .search-box h1 { font-size: clamp(34px, 6vw, 64px); letter-spacing: -.045em; }
+        .search-box span { color: var(--texto-suave); }
+        .search-box h1, .results-heading { text-shadow: 0 2px 12px rgba(0, 0, 0, .72); }
         .search-form { display: flex; gap: 8px; }
         .primary-form { width: 100%; max-width: 590px; gap: 10px; }
-        .primary-form input { flex: 1; min-width: 0; padding: 12px; font-size: 16px; border: 1px solid #dfe1e5; border-radius: 24px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .primary-form button { padding: 12px 20px; font-size: 16px; background: #4285f4; border-radius: 4px; }
-        .primary-form button:hover { background: #357ae8; }
+        .primary-form input { flex: 1; min-width: 0; padding: 12px 16px; font-size: 16px; color: inherit; border-radius: 24px; }
+        .primary-form input::placeholder { color: var(--texto-suave); }
+        .primary-form button { padding: 12px 20px; font-size: 16px; border-radius: 24px; }
         #titulo-resumen, #titulo-contexto { overflow-wrap: anywhere; }
-        .context-section { margin-top: 16px; padding-top: 14px; border-top: 1px solid #dfe5ef; }
+        .context-section { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--borde-vidrio); }
         .context-section h3 { margin: 0; font-size: 15px; }
         .summary, .metrics { margin: 0; }
         .summary > div, .metrics > div { display: flex; justify-content: space-between; gap: 10px; margin: 8px 0; font-size: 14px; }
         .summary dd, .metrics dd { margin: 0; font-weight: bold; white-space: nowrap; }
-        .metrics { margin-top: 12px; padding-top: 4px; border-top: 1px solid #dfe5ef; }
-        .metrics-cutoff { margin-top: 12px; padding-top: 10px; border-top: 1px solid #dfe5ef; }
-        .metrics-cutoff summary { color: #214cb0; font-size: 14px; font-weight: bold; cursor: pointer; }
+        .metrics { margin-top: 12px; padding-top: 4px; border-top: 1px solid var(--borde-vidrio); }
+        .metrics-cutoff { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--borde-vidrio); }
+        .metrics-cutoff summary { font-size: 14px; font-weight: bold; cursor: pointer; }
         .metrics-cutoff .metrics { margin-top: 4px; border-top: 0; }
         .expected { margin: 12px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.45; }
         .expected li + li { margin-top: 6px; }
-        .expected span { display: block; color: #506077; }
+        .expected span { display: block; color: var(--texto-suave); }
         .results-heading { font-size: 18px; margin: 0 0 14px; overflow-wrap: anywhere; }
-        .result { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .url { color: #006621; font-size: 14px; margin-bottom: 4px; overflow-wrap: anywhere; }
-        .title { color: #1a0dab; font-size: 18px; text-decoration: none; font-weight: bold; }
+        .result { padding: 20px; margin-bottom: 15px; border-radius: 16px; }
+        .url { color: #a8d6cd; font-size: 13px; margin-bottom: 6px; overflow-wrap: anywhere; }
+        .title { color: #fff9ed; font-size: 18px; text-decoration: none; font-weight: bold; }
         .title:hover { text-decoration: underline; }
-        .snippet { color: #545454; font-size: 14px; margin-top: 5px; }
-        .score { color: #888; font-size: 12px; margin-top: 8px; }
-        .pagination { display: flex; justify-content: center; align-items: center; gap: 16px; margin: 24px auto; }
-        .pagination a { color: #1a0dab; text-decoration: none; }
+        .snippet { color: #c8d0d5; font-size: 14px; line-height: 1.45; margin-top: 5px; }
+        .score { color: #b9c2c8; font-size: 12px; margin-top: 8px; }
+        .score strong { color: #edcda5; font-variant-numeric: tabular-nums; }
+        .empty-state { text-align: center; }
+        .pagination { display: flex; justify-content: center; align-items: center; gap: 16px; margin: 24px auto; width: fit-content; padding: 10px 16px; border-radius: 24px; }
+        .pagination a { color: inherit; text-decoration: none; }
         .pagination a:hover { text-decoration: underline; }
         @media (max-width: 680px) {
-            .layout {
+            .has-results .layout {
                 grid-template-columns: minmax(0, 1fr);
                 grid-template-areas: "search" "test" "summary" "results";
                 gap: 18px;
             }
-            .search-column, .side-column { display: contents; }
-            .primary-form { grid-area: search; }
-            .test-form { grid-area: test; }
-            .sidebar { grid-area: summary; color: #253248; }
-            .results { grid-area: results; }
+            .has-results .search-column, .has-results .side-column { display: contents; }
+            .has-results .primary-form { grid-area: search; }
+            .has-results .test-form { grid-area: test; }
+            .has-results .sidebar { grid-area: summary; }
+            .has-results .results { grid-area: results; }
+            .home .container { align-content: end; padding-bottom: 10svh; }
             .search-box { margin-bottom: 18px; }
         }
     </style>
 </head>
-<body>
+<body class="{{ 'has-results' if query else 'home' }}">
     <div class="container">
     <header class="search-box">
         <h1><a href="{{ url_for('index') }}">Mini-Google <span>BUAP</span></a></h1>
@@ -140,19 +220,17 @@ HTML_TEMPLATE = """
     {% if consultas_evaluadas or query %}
     <div class="side-column">
         {% if consultas_evaluadas %}
-            <form class="panel search-panel test-form" method="GET" action="{{ url_for('index') }}">
-                <label for="consulta-prueba">Consultas de prueba</label>
-                <div class="search-form">
-                    <select id="consulta-prueba" name="q" required>
-                        <option value="" disabled {% if not consulta_evaluada %}selected{% endif %}>Elige una consulta</option>
+            <form class="panel search-panel test-form" aria-labelledby="titulo-pruebas" method="GET" action="{{ url_for('index') }}">
+                <h2 id="titulo-pruebas">Consultas de prueba</h2>
+                <details class="test-picker" id="consulta-prueba">
+                    <summary>{{ consulta_evaluada.consulta if consulta_evaluada else 'Elige una consulta' }}</summary>
+                    <ul class="test-options">
                         {% for item in consultas_evaluadas %}
-                            <option value="{{ item.consulta }}" {% if item == consulta_evaluada %}selected{% endif %}>
-                                {{ item.consulta }}
-                            </option>
+                            <li><button type="submit" name="q" value="{{ item.consulta }}"
+                                {% if item == consulta_evaluada %}aria-current="true"{% endif %}>{{ item.consulta }}</button></li>
                         {% endfor %}
-                    </select>
-                    <button type="submit">Evaluar</button>
-                </div>
+                    </ul>
+                </details>
             </form>
         {% endif %}
     {% if query %}
@@ -199,7 +277,7 @@ HTML_TEMPLATE = """
     {% endif %}
     <div class="search-column">
         <form class="search-form primary-form" method="GET" action="{{ url_for('index') }}">
-            <input type="text" name="q" value="{{ query }}" aria-label="Búsqueda académica" placeholder="Escribe tu búsqueda académica..." required>
+            <input type="text" name="q" value="{{ query }}" aria-label="Búsqueda académica" placeholder="Escribe tu búsqueda…" required>
             <button type="submit">Buscar</button>
         </form>
     {% if query %}
@@ -210,13 +288,13 @@ HTML_TEMPLATE = """
                 <div class="url">{{ url }}</div>
                 <a href="{{ url }}" class="title" target="_blank">{{ titulo }}</a>
                 <div class="snippet">{{ resumen }}</div>
-                <div class="score">Puntaje de relevancia combinada (TF-IDF + PageRank): {{ "%.4f"|format(puntaje) }}</div>
+                <div class="score">Puntaje de relevancia combinada (TF-IDF + PageRank): <strong>{{ "%.4f"|format(puntaje) }}</strong></div>
             </div>
         {% else %}
             {% if sugerencia %}
-                <p style="text-align:center;">No se encontraron resultados. ¿Quisiste decir <a href="{{ url_for('index', q=sugerencia) }}">{{ sugerencia }}</a>?</p>
+                <p class="panel empty-state">No se encontraron resultados. ¿Quisiste decir <a href="{{ url_for('index', q=sugerencia) }}">{{ sugerencia }}</a>?</p>
             {% else %}
-                <p style="text-align:center;">No se encontraron resultados.</p>
+                <p class="panel empty-state">No se encontraron resultados.</p>
             {% endif %}
         {% endfor %}
         {% if total_paginas > 1 %}
@@ -235,6 +313,20 @@ HTML_TEMPLATE = """
     </div>
     </div>
     </div>
+    <script>
+        const consultas = document.getElementById('consulta-prueba');
+        if (consultas) {
+            document.addEventListener('click', (event) => {
+                if (!consultas.contains(event.target)) consultas.open = false;
+            });
+            consultas.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && consultas.open) {
+                    consultas.open = false;
+                    consultas.querySelector('summary').focus();
+                }
+            });
+        }
+    </script>
 </body>
 </html>
 """
@@ -242,6 +334,11 @@ HTML_TEMPLATE = """
 
 def titulo_documento(url, predeterminado="Sin título"):
     return info_paginas.get(url, {}).get("titulo", predeterminado).split("|", 1)[0].strip()
+
+
+@app.get("/fondo.jpg")
+def fondo():
+    return send_file(BASE_DIR / "docs" / "imagenes" / "fondouno.jpg")
 
 
 @app.route("/", methods=["GET"])
