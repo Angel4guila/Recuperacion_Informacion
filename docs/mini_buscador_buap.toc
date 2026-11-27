@@ -11,8 +11,8 @@
 \contentsline {subsection}{\numberline {3.1}Efecto de la estructura del corpus}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Consultas de prueba}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Evaluación con juicios de relevancia}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Acceso desde otro dispositivo}{10}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}General}{10}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4}Acceso desde otro dispositivo}{11}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}General}{11}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Otro dispositivo}{12}{subsubsection.3.4.2}%
 \contentsline {section}{\numberline {4}Alcance y conclusiones}{13}{section.4}%
 \contentsline {section}{\numberline {5}Referencias al código y a los datos}{14}{section.5}%

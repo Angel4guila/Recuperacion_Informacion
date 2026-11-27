@@ -184,9 +184,9 @@
 	\begin{figure}[!htbp]
 		\centering
 		\begin{subfigure}[t]{.33\linewidth}\centering
-			\recorte{height=92mm}{imagenes/image4.png}{1855}{980}{368}{76}{725}{865}
-			\caption{Interfaz web.}
-		\end{subfigure}\hfill
+    \includegraphics[height=92mm,width=\linewidth,keepaspectratio]{imagenes/image4.png}
+    \caption{Interfaz web.}
+\end{subfigure}\hfill
 		\begin{subfigure}[t]{.63\linewidth}\centering
 			\includegraphics[height=92mm]{imagenes/image.png}
 			\caption{Consola, con \code{:pruebas}.}
@@ -278,9 +278,9 @@
 	\begin{figure}[!htbp]
 		\centering
 		\begin{subfigure}[t]{\linewidth}\centering
-			\recorte{height=88mm}{imagenes/image7.png}{1856}{983}{430}{0}{1430}{925}
-			\caption{Interfaz web. Se recuperan 24 documentos, con paginación de cinco en cinco y el panel de facultad y área.}
-		\end{subfigure}\\[6pt]
+    \includegraphics[width=\linewidth,keepaspectratio]{imagenes/image7.png}
+    \caption{Interfaz web. Se recuperan 24 documentos, con paginación de cinco en cinco y el panel de facultad y área.}
+\end{subfigure}\\[6pt]
 		\begin{subfigure}[t]{\linewidth}\centering
 			\recorte{width=.96\linewidth}{imagenes/image2.png}{1398}{771}{0}{20}{1300}{520}
 			\caption{Consola: mismos puntajes y mismo orden, porque ambas interfaces llaman a \code{buscar}.}
@@ -389,11 +389,11 @@
 	\begin{figure}[!htbp]
 		\centering
 		\begin{subfigure}[t]{.76\linewidth}\centering
-			\recorte{height=90mm}{imagenes/image5.png}{1855}{980}{370}{70}{1490}{980}
-			\caption{Panel de evaluación (métricas de toda la lista y posición de cada documento esperado) junto a los primeros resultados.}
-		\end{subfigure}\hfill
+    \includegraphics[width=\linewidth,keepaspectratio]{imagenes/image5.png}
+    \caption{Panel de evaluación (métricas de toda la lista y posición de cada documento esperado) junto a los primeros resultados.}
+\end{subfigure}\hfill
 		\begin{subfigure}[t]{.2\linewidth}\centering
-			\includegraphics[height=90mm]{imagenes/image6.png}
+			\includegraphics[height=101mm]{imagenes/image6.png}
 			\caption{Top 5 desplegado.}
 		\end{subfigure}
 		\caption{Evaluación de \emph{Facultad de Ciencias de la Comunicación} en la interfaz web: 42 recuperados, 10 relevantes; \(P@42=23{,}81\,\text{\char37}\), \(\mathrm{Recall}@42=100\,\text{\char37}\), \(F1@42=38{,}46\,\text{\char37}\); \(P@5=80\,\text{\char37}\), \(\mathrm{Recall}@5=40\,\text{\char37}\), \(F1@5=53{,}33\,\text{\char37}\). Los enlaces usan el host de la petición.}\label{fig:evalweb}
